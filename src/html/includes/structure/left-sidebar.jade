@@ -10,7 +10,7 @@ mixin left-sidebar(active)
 
     li(class=( active_item == true ? 'active' : undefined ))
       a(href= url)
-        i.fa(class="#{conf.sidebarIconPrefix}-#{icon}")
+        i(class="#{conf.sidebarIconPrefix}-#{icon}")
         span= name
       if block
         ul.sub-menu

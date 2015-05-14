@@ -2,7 +2,7 @@
 	"siteTitle": "Product Title",
 	"assets_path": "",
 	"pagesExtension":"jade",
-	"sidebarIconPrefix": "fa",
+	"sidebarIconPrefix": "li",
 	"path": {
 		"libs": "lib",
 		"img": "img"
