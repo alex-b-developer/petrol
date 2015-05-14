@@ -19,5 +19,11 @@
     "files":{
       "open-sans" : "open-sans/fonts"
     }
+  },
+  "lato":{
+    "files":{
+      "lato/css" : "lato/css",
+      "lato/font" : "lato/font"
+    }
   }
 }
