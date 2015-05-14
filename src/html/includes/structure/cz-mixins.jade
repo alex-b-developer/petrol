@@ -1,0 +1,27 @@
+//lib script/link mixin
+mixin lib(name, type)
+	- type = type || 'js'
+	- var isurl = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/
+
+	if (typeof(conf.lib[name]) !== 'undefined')
+		if (typeof(conf.lib[name][type]) !== 'undefined')
+		each val in conf.lib[name][type]
+			if (type == 'js')
+				if isurl.test( val )
+					script(src= val, type='text/javascript')
+				else
+					script(src= (  conf.path.libs + '/' +  val), type='text/javascript')
+			else
+				if isurl.test( val )
+					link(href= val, type='text/css', ref='stylesheet')
+				else
+					link(rel='stylesheet', type='text/css', href= (conf.assets_path + '/' + conf.path.libs + '/' +  val))
+
+mixin lib_css( name )
+	+lib(name, 'css')
+
+mixin local_script( name )
+	script(src= (  conf.assets_path + '/js/' +  name), type='text/javascript')
+
+mixin local_style( name )
+	link(rel='stylesheet' , href= (  conf.assets_path + '/css/' +  name), type='text/css')

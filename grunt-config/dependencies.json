@@ -1,0 +1,23 @@
+{
+  "options": {
+    "report": "true",
+    "clean": "true",
+    "destPrefix": "<%= path.source %>/assets/lib"
+  },
+  "bootstrap": {
+    "files":{
+      "bootstrap/less" : "bootstrap/less",
+      "bootstrap/dist" : "bootstrap/dist"
+    }
+  },
+  "jquery":{
+    "files":{
+      "jquery" : "jquery/dist"
+    }
+  },
+  "open-sans":{
+    "files":{
+      "open-sans" : "open-sans/fonts"
+    }
+  }
+}

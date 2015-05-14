@@ -1,0 +1,13 @@
+block footer-scripts
+	+lib("jquery")
+	+local_script('core.js')
+	+lib("bootstrap")
+	
+block footer-script-init
+	script(type='text/javascript').
+		$(document).ready(function(){
+			//initialize the javascript
+			//App.init();
+		});
+
+block footer-scripts-after

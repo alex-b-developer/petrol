@@ -1,0 +1,29 @@
+//Main layout
+extends /includes/structure/cz-general-layout.jade
+
+//Config variables
+block vars
+	- var wrapper_classes = "special-wrapper-class"
+
+//Page script links
+block header-styles-after
+	include /includes/pages/dashboard/cz-header-styles.jade
+
+//Left sidebar
+block left-sidebar
+	//Left sidebar Mixin syntax:
+		+left-sidebar('active-item-id')
+
+	+left-sidebar('dashboard1')
+ 
+//Page main content
+block main-content
+	include /includes/pages/dashboard/cz-main-content.jade
+
+//Page Js script links
+block append footer-scripts
+	include /includes/pages/dashboard/cz-footer-scripts.jade
+
+//Js init function
+block footer-script-init
+	include /includes/pages/dashboard/cz-footer-script-init.jade

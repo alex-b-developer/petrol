@@ -1,0 +1,41 @@
+mixin left-sidebar(active)
+
+  //Sidebar item function
+  mixin sb-item(id, name, url, icon)
+    - var active_item = false
+    - url = (url ? url + "." + conf.pagesExtension : '#');
+    
+    if id == active
+      - active_item = true
+
+    li(class=( active_item == true ? 'active' : undefined ))
+      a(href= url)
+        i.fa(class="#{conf.sidebarIconPrefix}-#{icon}")
+        span= name
+      if block
+        ul.sub-menu
+          block
+
+  //Sidebar sub-item function
+  mixin sb-sub-item(id, name, url)
+    - var active_item = false
+    - url = (url ? url + "." + conf.pagesExtension : '#');
+
+    if id == active
+      - active_item = true
+
+    li(class=( active_item == true ? 'active' : undefined ))
+      if block
+        a(href= url)
+          block
+          | #{name}
+      else
+        a(href= url)= name
+
+  block left-sidebar-structure
+    //Here goes the sidebar structure
+    .main-sidebar-container
+      .content
+        include /includes/structure/cz-left-sidebar/cz-top.jade
+        include /includes/structure/cz-left-sidebar/cz-menu-elements.jade
+        include /includes/structure/cz-left-sidebar/cz-bottom.jade

@@ -1,0 +1,23 @@
+{
+  "name": "product-name",
+  "version": "0.0.0",
+  "authors": [
+    "author <email@author.domain>"
+  ],
+  "description": "Project description",
+  "main": "index.html",
+  "license": "Private",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "src/lib",
+    "dist",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.2",
+    "jquery": ">= 1.9.1",
+    "open-sans": "latest"
+  }
+}

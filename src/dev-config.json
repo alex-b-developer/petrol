@@ -1,0 +1,23 @@
+{
+	"siteTitle": "Product Title",
+	"assets_path": "",
+	"pagesExtension":"jade",
+	"sidebarIconPrefix": "fa",
+	"path": {
+		"libs": "lib",
+		"img": "img"
+	},
+	"enable_uploads":"false",
+	"lib":{
+		"bootstrap":{
+			"css":["bootstrap/dist/css/bootstrap.min.css"],
+			"js":["bootstrap/dist/js/bootstrap.min.js"]
+		},
+		"jquery":{
+			"js":["jquery/jquery.min.js"]
+		},
+		"open-sans-font":{
+			"css":["http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800"]
+		}
+	}
+}
