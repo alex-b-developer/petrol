@@ -6556,12 +6556,25 @@ button.close {
 /*Footer*/
 /*colors palette*/
 /*social colors*/
+ul {
+  list-style: none;
+}
 /* NAVBARS */
+.my-topheader {
+  min-height: 50px;
+  margin-bottom: 0px;
+  border: none;
+}
 .my-topheader .navbar-header .navbar-brand {
   width: 220px;
   background: #23262b url("../img/my-logo.png") center no-repeat;
   background-size: 160px;
   height: 80px;
+}
+/* LEFT SIDEBAR */
+.main-sidebar-container {
+  width: 220px;
+  background: #23262b;
 }
 /*HEADER*/
 /*BODY*/
