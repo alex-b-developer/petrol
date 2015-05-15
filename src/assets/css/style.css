@@ -6559,6 +6559,9 @@ button.close {
 /* NAVBARS */
 .my-topheader .navbar-header .navbar-brand {
   width: 220px;
+  background: #23262b url("../img/my-logo.png") center no-repeat;
+  background-size: 160px;
+  height: 80px;
 }
 /*HEADER*/
 /*BODY*/
