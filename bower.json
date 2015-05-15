@@ -19,6 +19,7 @@
     "bootstrap": "~3.3.2",
     "jquery": ">= 1.9.1",
     "open-sans": "latest",
-    "lato": "~0.3.0"
+    "lato": "~0.3.0",
+    "linea-io": "~1.0.0"
   }
 }

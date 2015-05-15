@@ -25,5 +25,11 @@
       "lato/css" : "lato/css",
       "lato/font" : "lato/font"
     }
+  },
+  "linea-io":{
+    "files":{
+      "linea-io" : "linea-io/linea.css",
+      "linea-io/fonts" : "linea-io/fonts"
+    }
   }
 }
