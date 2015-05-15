@@ -6551,13 +6551,19 @@ button.close {
 /*CONFIG AND GENERAL STYLE*/
 /*Paths*/
 /*General colors palette*/
+/*Sidebar colors palette*/
 /*General elements*/
 /*Sidebar*/
 /*Footer*/
 /*colors palette*/
 /*social colors*/
+body {
+  background: #e5e5e5;
+}
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 /* NAVBARS */
 .my-topheader {
@@ -6567,14 +6573,79 @@ ul {
 }
 .my-topheader .navbar-header .navbar-brand {
   width: 220px;
-  background: #23262b url("../img/my-logo.png") center no-repeat;
+  background: #303d45 url("../img/my-logo.png") center no-repeat;
   background-size: 160px;
   height: 80px;
 }
-/* LEFT SIDEBAR */
-.main-sidebar-container {
+/* LEFTSIDEBAR */
+.my-main-sidebar-container {
   width: 220px;
-  background: #23262b;
+  background: #303d45;
+}
+/* SEARCH */
+.my-search {
+  width: 220px;
+  height: 40px;
+  outline: 0;
+  border: 0;
+  padding: 0 20px;
+  background: #242b30;
+  color: #eaeaea;
+  font-size: 12px;
+  font-family: Open Sans, sans-serif;
+}
+.my-search::-webkit-input-placeholder {
+  color: #60737c;
+}
+.my-search:-moz-placeholder {
+  /* Firefox 18- */
+  color: #60737c;
+}
+.my-search::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #60737c;
+}
+:-ms-input-placeholder {
+  color: #60737c;
+}
+/* MENU ELEMENTS */
+.my-sidebar-elements-class li {
+  /* .active{
+			color: @my-sidebar-text-on;
+			border-bottom: 1px solid @my-primary-color;
+		} */
+}
+.my-sidebar-elements-class li a {
+  display: block;
+  width: 220px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 20px;
+  color: #60737c;
+  font-size: 14px;
+  font-family: Lato, sans-serif;
+}
+.my-sidebar-elements-class li a:hover {
+  text-decoration: none;
+  color: #eaeaea;
+}
+.my-sidebar-elements-class li a i {
+  margin-right: 20px;
+}
+ul.sub-menu {
+  background: #242b30;
+  padding: 10px 0;
+}
+ul.sub-menu li {
+  /* 
+		.active{
+			color: @my-sidebar-text-on;
+		} */
+}
+ul.sub-menu li a {
+  height: 30px;
+  line-height: 30px;
+  padding-left: 54px;
 }
 /*HEADER*/
 /*BODY*/
