@@ -2,7 +2,7 @@
 	"siteTitle": "Product Title",
 	"assets_path": "",
 	"pagesExtension":"jade",
-	"sidebarIconPrefix": "li",
+	"sidebarIconPrefix": "icon",
 	"path": {
 		"libs": "lib",
 		"img": "img"
@@ -18,6 +18,9 @@
 		},
 		"open-sans-font":{
 			"css":["http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800"]
+		},
+		"linea-iconset":{
+			"css":["linea-io/linea.css"]
 		}
 	}
 }
