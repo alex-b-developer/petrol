@@ -1,5 +1,5 @@
 {
-	"siteTitle": "Mercury",
+	"siteTitle": "Mercury |",
 	"assets_path": "",
 	"pagesExtension":"jade",
 	"sidebarIconPrefix": "icon",
@@ -20,7 +20,7 @@
 			"css":["open-sans/css/open-sans.min.css"]
 		},
 		"lato-font":{
-			"css":["http://fonts.googleapis.com/css?family=Lato:400,100,300,400italic,700,900"]
+			"css":["lato/css/lato.min.css"]
 		},
 		"linea-iconset":{
 			"css":["linea-io/linea.css"]
