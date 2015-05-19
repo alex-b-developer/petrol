@@ -17,7 +17,8 @@
   },
   "open-sans":{
     "files":{
-      "open-sans" : "open-sans/fonts"
+      "open-sans/fonts" : "open-sans/fonts",
+      "open-sans/css" : "open-sans/css"
     }
   },
   "lato":{

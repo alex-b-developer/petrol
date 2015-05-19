@@ -17,7 +17,7 @@
 			"js":["jquery/jquery.min.js"]
 		},
 		"open-sans-font":{
-			"css":["http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700,800"]
+			"css":["open-sans/css/open-sans.min.css"]
 		},
 		"lato-font":{
 			"css":["http://fonts.googleapis.com/css?family=Lato:400,100,300,400italic,700,900"]
