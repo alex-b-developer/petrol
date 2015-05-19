@@ -6603,7 +6603,7 @@ ul {
   outline: 0;
   border: 0;
   padding: 0 20px;
-  background: #242b30;
+  background: #242b30 url("../img/search-icon.png") 180px no-repeat;
   color: #eaeaea;
   font-size: 12px;
   font-family: Open Sans, sans-serif;
@@ -6623,11 +6623,9 @@ ul {
   color: #60737c;
 }
 /* MENU ELEMENTS */
-.my-sidebar-elements-class li {
-  /* .active{
-			color: @my-sidebar-text-on;
-			border-bottom: 1px solid @my-primary-color;
-		} */
+.my-sidebar-elements-class li .active {
+  color: #eaeaea;
+  border-bottom: 1px solid #1ed1af;
 }
 .my-sidebar-elements-class li a {
   display: block;
@@ -6645,6 +6643,11 @@ ul {
 }
 .my-sidebar-elements-class li a i {
   margin-right: 20px;
+}
+.my-sidebar-elements-class li a i.icon-arrows_minus {
+  margin-right: 0px;
+  float: right;
+  padding-top: 14px;
 }
 ul.sub-menu {
   background: #242b30;

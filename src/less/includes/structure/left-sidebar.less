@@ -11,7 +11,7 @@
 	outline:0;
 	border:0;
 	padding:0 20px;
-	background: @my-secondary-color-dark;
+	background: @my-secondary-color-dark url("@{img-path}/search-icon.png") 180px no-repeat;
 	color: @my-sidebar-text-on;
 	font-size:12px;
   font-family: Open Sans, sans-serif;
@@ -39,10 +39,10 @@
 
 	li{
 
-		/* .active{
+		.active{
 			color: @my-sidebar-text-on;
 			border-bottom: 1px solid @my-primary-color;
-		} */
+		}
 
 		a{
 			display:block;
@@ -61,6 +61,12 @@
 		
 			i{
 				margin-right:20px;
+			}
+
+			i.icon-arrows_minus{
+				margin-right:0px;
+				float:right;
+				padding-top:14px;
 			}
 
 		}
