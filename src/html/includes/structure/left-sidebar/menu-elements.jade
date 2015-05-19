@@ -8,21 +8,17 @@ ul.my-sidebar-elements-class
     Sub-level Item
       +sb-sub-item(id, name, url)
         extra content
-        
-  +sb-item('dashboard', 'Dashboard','','basic_home')
-    +sb-sub-item('dashboard1', 'Version 1','index')
-    +sb-sub-item('dashboard2', 'Version 2','dashboard2')
-      span.label.label-primary.pull-right New
+          
+  +sb-item('dashboard', 'Dashboard','index','basic_home')
   +sb-item('ui-elements', 'UI Elements','','basic_paperplane')
-    +sb-sub-item('ui-elements-general', 'General','ui-elements')
+    +sb-sub-item('ui-general', 'General','ui-general')
+    +sb-sub-item('ui-grid', 'Grid','ui-grid')
+    +sb-sub-item('ui-typography', 'Typography','ui-typography')
+      span.label.label-primary.pull-right New
     +sb-sub-item('ui-buttons', 'Buttons','ui-buttons')
     +sb-sub-item('ui-modals', 'Modals','ui-modals')
-    +sb-sub-item('ui-notifications', 'Notifications','ui-notifications')
     +sb-sub-item('ui-icons', 'Icons','ui-icons')
-    +sb-sub-item('ui-grid', 'Grid','ui-grid')
     +sb-sub-item('ui-tabs-accordions', 'Tabs & Accordions','ui-tabs-accordions')
-    +sb-sub-item('ui-nestable-lists', 'Nestable Lists','ui-nestable-lists')
-    +sb-sub-item('ui-treeview', 'Tree View','ui-treeview')
   +sb-item('forms', 'Forms','','software_layout')
     +sb-sub-item('form-elements', 'Components', 'form-elements')
     +sb-sub-item('form-validation', 'Validation', 'form-validation')
