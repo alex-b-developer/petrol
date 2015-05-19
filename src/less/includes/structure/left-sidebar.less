@@ -18,19 +18,19 @@
 }
 
 .my-search::-webkit-input-placeholder {
-  color: @my-sidebar-text-off;
+  color: @my-sidebar-secondary-text-off;
 }
 
 .my-search:-moz-placeholder { /* Firefox 18- */
-  color: @my-sidebar-text-off;  
+  color:@my-sidebar-secondary-text-off;
 }
 
 .my-search::-moz-placeholder {  /* Firefox 19+ */
-  color: @my-sidebar-text-off;
+  color: @my-sidebar-secondary-text-off;
 }
 
 :-ms-input-placeholder {  
-  color: @my-sidebar-text-off;
+  color: @my-sidebar-secondary-text-off;
 }
 
 /* MENU ELEMENTS */
@@ -50,9 +50,14 @@
 			height:40px;
 			line-height:40px;
 			padding: 0 20px;
-			color:@my-sidebar-text-off;
+			color:@my-sidebar-primary-text-off;
 			font-size:14px;
 			font-family:Lato,sans-serif;
+			transition: color .5s ease;
+			-moz-transition: color .5s ease;
+			-webkit-transition: color .5s ease;
+			-o-transition: color .5s ease;
+			-ms-transition: color .5s ease;
 
 			&:hover{
 			text-decoration:none;
@@ -87,6 +92,7 @@ ul.sub-menu{
 		} */
 
 		a{
+			color:@my-sidebar-secondary-text-off;
 			height:30px;
 			line-height:30px;
 			padding-left: 54px;
