@@ -6704,6 +6704,7 @@ ul {
   padding-top: 14px;
 }
 ul.sub-menu {
+  display: none;
   background: #242b30;
   padding: 10px 0;
 }
