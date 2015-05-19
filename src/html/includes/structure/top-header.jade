@@ -34,7 +34,23 @@ nav.navbar.navbar-default.my-topheader
             li.divider
             li
               a(href='#') One more separated link
-      ul.nav.navbar-nav.navbar-right
+      ul.nav.navbar-nav.navbar-right        
+        li.dropdown.profile_menu
+          a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
+            img.img-circle(alt='Avatar', src='/img/avatar-small.jpg')
+            span Steven Tyler
+            span.caret
+          ul.dropdown-menu(role='menu')
+            li
+              a(href='#') My Account
+            li
+              a(href='#') Profile
+            li
+              a(href='#') Messages
+            li.divider
+            li
+              a(href='#') Sign Out
+      ul.nav.navbar-nav.navbar-right.not-nav
         li
           a(href='#')
             i.icon-music_bell
@@ -45,19 +61,5 @@ nav.navbar.navbar-default.my-topheader
         li
           a(href='#')
             i.icon-basic_gear
-        li.dropdown
-          a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
-            | Dropdown 
-            span.caret
-          ul.dropdown-menu(role='menu')
-            li
-              a(href='#') Action
-            li
-              a(href='#') Another action
-            li
-              a(href='#') Something else here
-            li.divider
-            li
-              a(href='#') Separated link
     // /.navbar-collapse
   // /.container-fluid

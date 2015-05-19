@@ -6591,6 +6591,21 @@ ul {
 .navbar-default {
   font-size: 16px;
 }
+.navbar-default .navbar-nav > li > a {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.navbar-default .not-nav > li > a {
+  padding-top: 26px;
+  padding-bottom: 26px;
+}
+.navbar-default .navbar-nav > .profile_menu > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.profile_menu img {
+  margin-right: 10px;
+}
 /* LEFTSIDEBAR */
 .my-main-sidebar-container {
   width: 220px;
