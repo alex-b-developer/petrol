@@ -59,3 +59,22 @@
 @pinterest: #e13138;
 @github: #333;
 @tumblr: #426d9b;
+
+//Responsive Variables
+@desktop: ~"(min-width: @{screen-lg})";
+@laptop: ~"(min-width: @{screen-md}) and (max-width: @{screen-md-max})";
+@tablet: ~"(min-width: @{screen-sm}) and (max-width: @{screen-sm-max})";
+@phone: ~"(max-width: @{screen-xs-max})";
+@small-phone: ~"(max-width: @{screen-xs})";
+
+//Retina Display
+@retina: ~"all and (-webkit-min-device-pixel-ratio: 2), all and (min-resolution: 192dpi)";
+
+//Google Chrome Query
+@webkit: ~"screen and (-webkit-min-device-pixel-ratio:0)";
+
+//IE8 Media Query
+@ie8: \0screen;
+
+//IE 10+ Media Query
+@ie10: ~"all and (-ms-high-contrast: none), (-ms-high-contrast: active)";

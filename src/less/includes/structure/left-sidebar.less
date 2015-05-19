@@ -2,6 +2,38 @@
 .my-main-sidebar-container{
 	width: @my-sidebar-width;
 	background: @my-secondary-color;
+
+	.my-sidebar-toggle{
+		padding: 10px 0;
+		display: none;
+		text-align: center;
+		background-color: @my-secondary-color-dark;
+		cursor: pointer;
+
+		&:hover{
+			background-color: lighten(@my-secondary-color-dark, 1%)
+		}
+	
+		span.icon{
+			font-size: 30px;
+			color: @my-sidebar-text-on;
+		}
+
+		@media @phone{
+			display: block;
+		}
+	}
+
+	.content{
+
+		@media @phone {
+			display: none;
+		}
+	}
+
+	@media @phone {
+		width: auto;
+	}
 }
 
 /* SEARCH */
