@@ -6623,7 +6623,6 @@ a:link {
 /* LEFTSIDEBAR */
 .my-main-sidebar-container {
   width: 220px;
-  height: 100vh;
   background: #303d45;
 }
 .my-main-sidebar-container .my-sidebar-toggle {
