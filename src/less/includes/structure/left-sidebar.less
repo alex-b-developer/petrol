@@ -1,6 +1,7 @@
 /* LEFTSIDEBAR */
 .my-main-sidebar-container{
 	width: @my-sidebar-width;
+	height: 100vh;
 	background: @my-secondary-color;
 
 	.my-sidebar-toggle{
@@ -85,29 +86,26 @@
 			color:@my-sidebar-primary-text-off;
 			font-size:14px;
 			font-family:Lato,sans-serif;
-			transition: color .5s ease;
-			-moz-transition: color .5s ease;
-			-webkit-transition: color .5s ease;
-			-o-transition: color .5s ease;
-			-ms-transition: color .5s ease;
+			transition: color .3s ease;
+			-moz-transition: color .3s ease;
+			-webkit-transition: color .3s ease;
+			-o-transition: color .3s ease;
+			-ms-transition: color .3s ease;
 
 			&:hover{
 			text-decoration:none;
 			color:@my-sidebar-text-on;
 			}
-		
+
 			i{
 				margin-right:20px;
 			}
 
-			i.icon-arrows_minus{
-				margin-right:0px;
-				float:right;
-				padding-top:14px;
+			span.icon{
+				float: right;
+				padding-top: 14px;
 			}
-
 		}
-
 	}
 }
 
