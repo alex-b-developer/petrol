@@ -61,22 +61,37 @@
 }
 
 .messages{
+	color:#000;
 	.notif-body{
 		min-height:65px;
+		padding: 15px;
+		span {
+			font-weight: bold;
+		}
 	}
 
 	img{
 		float:left;
 		padding:10px;
 	}
-	.content li{
-		border-bottom: 1px solid @my-text-gray-light;
+	.content {
+		padding: 5px;
+		li{
+			border-bottom: 1px solid @my-text-gray-light;
 
-		.date {
-			font-size: 10px;
-			color: @my-text-gray-light;
+			.date {
+				font-size: 10px;
+				color: @my-text-gray-light;
+			}
 		}
 	}
+	.foot {
+		padding: 10px;
+		li{
+			text-align:center;
+		}
+	}
+
 } 
 
 
