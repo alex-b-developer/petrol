@@ -108,37 +108,23 @@
 				left:186px;
 
 				&.icon-arrows_plus{
-					
 				  opacity:1;				
-				  -webkit-transform: rotate(0deg);
-				  -moz-transition: rotate(0deg);
-				  -o-transition: rotate(0deg);
-				  -ms-transition: rotate(0deg);	
-				  transform: rotate(0deg);
+				  .rotate(0deg);
+				  .transition(@my-sidebar-right-icons-transition);
 
-				  transition: @my-sidebar-right-icons-transition;
-					-moz-transition: @my-sidebar-right-icons-transition;
-					-webkit-transition: @my-sidebar-right-icons-transition;
-					-o-transition: @my-sidebar-right-icons-transition;
-					-ms-transition: @my-sidebar-right-icons-transition;
-
+				  &.rotate{
+				  	.rotate(90deg);
+				  }
 				}
 				
 				&.icon-arrows_minus{
-
 				  opacity:0;
-				  -webkit-transform: rotate(-90deg);
-				  -moz-transform: rotate(-90deg);
-				  -o-transform: rotate(-90deg);
-				  -ms-transform: rotate(-90deg);
-				  transform: rotate(-90deg);
+				  .rotate(-90deg);
+				  .transition(@my-sidebar-right-icons-transition);
 
-				  transition: @my-sidebar-right-icons-transition;
-					-moz-transition: @my-sidebar-right-icons-transition;
-					-webkit-transition: @my-sidebar-right-icons-transition;
-					-o-transition: @my-sidebar-right-icons-transition;
-					-ms-transition: @my-sidebar-right-icons-transition;
-
+				  &.rotate{
+				  	.rotate(0deg);
+				  }
 				}
 			}
 		}
