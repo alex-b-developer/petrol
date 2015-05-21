@@ -2,7 +2,8 @@
 	min-height: 50px;
   margin-bottom: 0px;
   border: none;
-
+	
+	//Logo & toggle button
 	.navbar-header{
 
 		.navbar-brand{
@@ -16,84 +17,100 @@
 			background-color: @my-secondary-color;
 		}
 	}
-}
+	
+	//Menus
+	.navbar-nav{
+			
+		> li{//First level
 
-.navbar-right{
-	i {
-		font-size: 25px;
-	}
-	.badge {
-		position: absolute;
-  	right: 5px;
-  	background-color: @my-primary-color;
-  	padding: 3px 3px;
-  	font-weight: normal;
-	}
-}
+			> a{
+				padding-top: 0;
+				padding-bottom: 0;
+				line-height: @my-topheader-height;
+				font-size: 16px;
 
-.navbar-default{
-	font-size: 16px;
+				//Icon style inside menu
+				.icon{
+					font-size: 25px;
+				}
 
-	.navbar-nav > li > a {
-	  padding-top: 30px;
-	  padding-bottom: 30px;
-	}
-
-	.not-nav > li {
-		> a {
-		  padding-top: 26px;
-		  padding-bottom: 26px;
- 		  }
-	  .dropdown-menu {
-		  padding: 0;
-		  width: 310px;
-		}
-	}
-
-	.navbar-nav > .profile_menu > a {
-	  padding-top: 10px;
-	  padding-bottom: 10px;
-	}
-}
-
-.profile_menu img {
-  margin-right: 10px;
-}
-
-.messages{
-	color:#000;
-	.notif-body{
-		min-height:65px;
-		padding: 15px;
-		span {
-			font-weight: bold;
-		}
-	}
-
-	img{
-		float:left;
-		padding:10px;
-	}
-	.content {
-		padding: 5px;
-		li{
-			border-bottom: 1px solid @my-text-gray-light;
-
-			.date {
-				font-size: 10px;
-				color: @my-text-gray-light;
+				//Notifications badge globe style
+				.badge {
+					position: absolute;
+			  	right: 5px;
+			  	background-color: @my-primary-color;
+			  	padding: 3px 3px;
+			  	font-weight: normal;
+				}
 			}
 		}
 	}
-	.foot {
-		padding: 10px;
-		li{
-			text-align:center;
+
+	//Notification menus
+	.my-not-nav{
+		
+		//General style
+		> li {
+
+		  .dropdown-menu {
+			  padding: 0;
+			  width: 310px;
+			}
+		}
+		
+		//Notifications dropdown
+		.my-notifications{
+			color:#000;
+
+			.notif-body{
+				min-height:65px;
+				padding: 15px;
+				span {
+					font-weight: bold;
+				}
+			}
+
+			img{
+				float:left;
+				padding:10px;
+			}
+
+			.content {
+				padding: 5px;
+				li{
+					border-bottom: 1px solid @my-text-gray-light;
+
+					.date {
+						font-size: 10px;
+						color: @my-text-gray-light;
+					}
+				}
+			}
+
+			.foot {
+				padding: 10px;
+				li{
+					text-align:center;
+				}
+			}
+		}
+
+		//Messages dropdown
+		.my-messages{}
+
+		//Settings dropdown
+		.my-settings{}
+	}
+	
+	//Profile Menu
+	.my-profile-menu{
+
+		> li{
+			> a{
+				img {
+				  margin-right: 10px;
+				}
+			}
 		}
 	}
-
-} 
-
-
-
-
+}

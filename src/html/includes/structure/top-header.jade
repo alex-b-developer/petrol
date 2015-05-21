@@ -35,29 +35,14 @@ nav.navbar.navbar-default.my-topheader
             li
               a(href='#') One more separated link
       ul.nav.navbar-nav.navbar-right        
-        li.dropdown.profile_menu
-          a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
-            img.img-circle(alt='Avatar', src='/img/avatar-small.jpg')
-            span Steven Tyler
-            span.caret
-          ul.dropdown-menu(role='menu')
-            li
-              a(href='#') My Account
-            li
-              a(href='#') Profile
-            li
-              a(href='#') Messages
-            li.divider
-            li
-              a(href='#') Sign Out
-      ul.nav.navbar-nav.navbar-right.not-nav
-        li
-          include /includes/structure/top-header/notifications-dropdown.jade
+        include /includes/structure/top-header/profile-dropdown.jade
+      ul.nav.navbar-nav.navbar-right.my-not-nav
+        include /includes/structure/top-header/notifications-dropdown.jade
         li
           a(href='#')
-            i.icon-basic_elaboration_message_dots
+            i.icon.icon-basic_elaboration_message_dots
         li
           a(href='#')
-            i.icon-basic_gear
+            i.icon.icon-basic_gear
     // /.navbar-collapse
   // /.container-fluid

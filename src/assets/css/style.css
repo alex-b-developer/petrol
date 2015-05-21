@@ -6551,6 +6551,7 @@ button.close {
 /*CONFIG AND GENERAL STYLE*/
 /*Paths*/
 /*General colors palette*/
+/*Top Header*/
 /*Sidebar colors palette*/
 /*General elements*/
 /*Sidebar*/
@@ -6592,67 +6593,58 @@ a:link {
     background-color: #303d45;
   }
 }
-.navbar-right i {
+.my-topheader .navbar-nav > li > a {
+  padding-top: 0;
+  padding-bottom: 0;
+  line-height: 80px;
+  font-size: 16px;
+}
+.my-topheader .navbar-nav > li > a .icon {
   font-size: 25px;
 }
-.navbar-right .badge {
+.my-topheader .navbar-nav > li > a .badge {
   position: absolute;
   right: 5px;
   background-color: #1ed1af;
   padding: 3px 3px;
   font-weight: normal;
 }
-.navbar-default {
-  font-size: 16px;
-}
-.navbar-default .navbar-nav > li > a {
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-.navbar-default .not-nav > li > a {
-  padding-top: 26px;
-  padding-bottom: 26px;
-}
-.navbar-default .not-nav > li .dropdown-menu {
+.my-topheader .my-not-nav > li .dropdown-menu {
   padding: 0;
   width: 310px;
 }
-.navbar-default .navbar-nav > .profile_menu > a {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-.profile_menu img {
-  margin-right: 10px;
-}
-.messages {
+.my-topheader .my-not-nav .my-notifications {
   color: #000;
 }
-.messages .notif-body {
+.my-topheader .my-not-nav .my-notifications .notif-body {
   min-height: 65px;
   padding: 15px;
 }
-.messages .notif-body span {
+.my-topheader .my-not-nav .my-notifications .notif-body span {
   font-weight: bold;
 }
-.messages img {
+.my-topheader .my-not-nav .my-notifications img {
   float: left;
   padding: 10px;
 }
-.messages .content {
+.my-topheader .my-not-nav .my-notifications .content {
   padding: 5px;
 }
-.messages .content li {
+.my-topheader .my-not-nav .my-notifications .content li {
   border-bottom: 1px solid #bababa;
 }
-.messages .content li .date {
+.my-topheader .my-not-nav .my-notifications .content li .date {
   font-size: 10px;
   color: #bababa;
 }
-.messages .foot {
+.my-topheader .my-not-nav .my-notifications .foot {
   padding: 10px;
 }
-.messages .foot li {
+.my-topheader .my-not-nav .my-notifications .foot li {
   text-align: center;
+}
+.my-topheader .my-profile-menu > li > a img {
+  margin-right: 10px;
 }
 /* LEFTSIDEBAR */
 .my-main-sidebar-container {
