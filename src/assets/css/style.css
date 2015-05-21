@@ -6624,12 +6624,22 @@ a:link {
 .profile_menu img {
   margin-right: 10px;
 }
+.messages {
+  color: #000;
+}
 .messages .notif-body {
   min-height: 65px;
+  padding: 15px;
+}
+.messages .notif-body span {
+  font-weight: bold;
 }
 .messages img {
   float: left;
   padding: 10px;
+}
+.messages .content {
+  padding: 5px;
 }
 .messages .content li {
   border-bottom: 1px solid #bababa;
@@ -6637,6 +6647,12 @@ a:link {
 .messages .content li .date {
   font-size: 10px;
   color: #bababa;
+}
+.messages .foot {
+  padding: 10px;
+}
+.messages .foot li {
+  text-align: center;
 }
 /* LEFTSIDEBAR */
 .my-main-sidebar-container {
