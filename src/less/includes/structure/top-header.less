@@ -39,18 +39,46 @@
 	  padding-bottom: 30px;
 	}
 
-	.not-nav > li > a {
-	  padding-top: 26px;
-	  padding-bottom: 26px;
+	.not-nav > li {
+		> a {
+		  padding-top: 26px;
+		  padding-bottom: 26px;
+ 		  }
+	  .dropdown-menu {
+		  padding: 0;
+		  width: 310px;
+		}
 	}
 
 	.navbar-nav > .profile_menu > a {
 	  padding-top: 10px;
 	  padding-bottom: 10px;
 	}
-
 }
 
 .profile_menu img {
   margin-right: 10px;
 }
+
+.messages{
+	.notif-body{
+		min-height:65px;
+	}
+
+	img{
+		float:left;
+		padding:10px;
+	}
+	.content li{
+		border-bottom: 1px solid @my-text-gray-light;
+
+		.date {
+			font-size: 10px;
+			color: @my-text-gray-light;
+		}
+	}
+} 
+
+
+
+

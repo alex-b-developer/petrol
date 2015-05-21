@@ -6613,12 +6613,30 @@ a:link {
   padding-top: 26px;
   padding-bottom: 26px;
 }
+.navbar-default .not-nav > li .dropdown-menu {
+  padding: 0;
+  width: 310px;
+}
 .navbar-default .navbar-nav > .profile_menu > a {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 .profile_menu img {
   margin-right: 10px;
+}
+.messages .notif-body {
+  min-height: 65px;
+}
+.messages img {
+  float: left;
+  padding: 10px;
+}
+.messages .content li {
+  border-bottom: 1px solid #bababa;
+}
+.messages .content li .date {
+  font-size: 10px;
+  color: #bababa;
 }
 /* LEFTSIDEBAR */
 .my-main-sidebar-container {
