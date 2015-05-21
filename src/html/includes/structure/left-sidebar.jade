@@ -12,7 +12,9 @@ mixin left-sidebar(active)
       a(href= url)
         i(class="#{conf.sidebarIconPrefix} #{conf.sidebarIconPrefix}-#{icon}")
         span= name
-        span(class="#{conf.sidebarIconPrefix} #{conf.sidebarIconPrefix}-arrows_plus")
+        if block
+          span(class="#{conf.sidebarIconPrefix} #{conf.sidebarIconPrefix}-arrows_plus")
+          span(class="#{conf.sidebarIconPrefix} #{conf.sidebarIconPrefix}-arrows_minus")
       if block
         ul.sub-menu
           block
