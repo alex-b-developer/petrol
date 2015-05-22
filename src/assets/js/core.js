@@ -35,12 +35,11 @@ var App = (function () {
     var icon_plus = $("> a > span.icon.icon-arrows_plus", main_item);
     var icon_minus = $("> a > span.icon.icon-arrows_minus", main_item);
 
+    icon_plus.addClass("rotate");
+    icon_minus.addClass("rotate");
+
     sub_menu.slideDown(function(){ //Execute when animation is completed
       main_item.addClass("open");
-
-      icon_plus.addClass("rotate");
-      icon_minus.addClass("rotate");
-
     });
 
   }
