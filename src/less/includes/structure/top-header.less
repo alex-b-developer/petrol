@@ -56,10 +56,32 @@
 		  .dropdown-menu {
 			  padding: 0;
 			  width: 310px;
+
+			  .content {
+					padding: 5px;
+					li{
+						border-bottom: 1px solid @my-text-gray-light;
+
+						&:hover{
+							background: @gray-lighter;
+						}
+					}
+				}
+				.foot {
+					padding: 10px;
+					li{
+						text-align:center;
+						a{
+							font-size: 12px;
+		  				font-weight: bold;
+		  				color: @my-text-gray-dark;
+						}
+					}
+				}
 			}
 		}
 		
-		//Notifications dropdown
+		//Messages dropdown
 		.my-messages{
 			color:#000;
 
@@ -77,6 +99,13 @@
 					display: table;
 					font-size: 12px;
 				}
+				.date {
+					font-size: 10px;
+					color: @my-text-gray-light;
+					position: relative;
+					top: 2px;
+					float: right;
+				}
 			}
 
 			img{
@@ -84,44 +113,49 @@
 				padding:10px;
 				width: 62px;
 			}
+		}
 
-			.content {
-				padding: 5px;
-				li{
-					border-bottom: 1px solid @my-text-gray-light;
-
-					&:hover{
-						background: @gray-lighter;
+		//Alerts dropdown
+		.my-alerts{
+			.content{
+				.icon{
+					float:left;
+					color: @my-text-gray-dark;
+					padding: 15px;
+					font-size: 18px;
+				}
+				.alert-body{
+					padding: 15px;
+					span{
+						color: @my-text-gray-dark;
 					}
-
-					.date {
+					.description{
+						display: table;
+						font-size: 12px;
+					}
+					.date{
 						font-size: 10px;
 						color: @my-text-gray-light;
 						position: relative;
-  					top: 2px;
+						top: 3px;
+						float: right;
 					}
-				}
-			}
-
-			.foot {
-				padding: 10px;
-				li{
-					text-align:center;
-					a{
-						font-size: 12px;
-	  				font-weight: bold;
-	  				color: @my-text-gray-dark;
-					}
-
 				}
 			}
 		}
 
-		//Messages dropdown
-		.my-alerts{}
-
 		//Settings dropdown
-		.my-settings{}
+		.my-settings{
+			.content{
+				a{
+					color: @my-text-gray-dark;
+					font-size: 12px;
+					.sett-body{
+						padding: 15px;
+					}
+				}
+			}
+		}
 	}
 	
 	//Profile Menu

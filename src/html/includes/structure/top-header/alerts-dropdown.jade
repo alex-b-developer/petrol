@@ -1,3 +1,28 @@
-li
-  a(href='#')
+li.my-alerts
+  a.dropdown-toggle(href='javascript:;', data-toggle='dropdown', aria-expanded='true')
     i.icon.icon-music_bell
+  ul.dropdown-menu
+    li
+      .content
+        ul
+          li
+            a(href='#')
+              i.icon.icon-basic_elaboration_message_check
+              .alert-body             
+                span.date 2 hours ago.
+                span.description You have 3 unreaded messages
+          li
+            a(href='#')
+              i.icon.icon-basic_notebook
+              .alert-body                
+                span.date yesterday
+                span.description Someone commented your milestone
+          li
+            a(href='#')
+              i.icon.icon-basic_todo_txt
+              .alert-body              	
+                span.date 3 Feb.
+                span.description Andrew stated a new project
+      ul.foot
+        li
+          a(href='#') View all Alerts

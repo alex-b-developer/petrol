@@ -6614,6 +6614,26 @@ a:link {
   padding: 0;
   width: 310px;
 }
+.my-topheader .my-not-nav > li .dropdown-menu .content {
+  padding: 5px;
+}
+.my-topheader .my-not-nav > li .dropdown-menu .content li {
+  border-bottom: 1px solid #bababa;
+}
+.my-topheader .my-not-nav > li .dropdown-menu .content li:hover {
+  background: #eeeeee;
+}
+.my-topheader .my-not-nav > li .dropdown-menu .foot {
+  padding: 10px;
+}
+.my-topheader .my-not-nav > li .dropdown-menu .foot li {
+  text-align: center;
+}
+.my-topheader .my-not-nav > li .dropdown-menu .foot li a {
+  font-size: 12px;
+  font-weight: bold;
+  color: #606060;
+}
 .my-topheader .my-not-nav .my-messages {
   color: #000;
 }
@@ -6631,36 +6651,47 @@ a:link {
   display: table;
   font-size: 12px;
 }
+.my-topheader .my-not-nav .my-messages .mess-body .date {
+  font-size: 10px;
+  color: #bababa;
+  position: relative;
+  top: 2px;
+  float: right;
+}
 .my-topheader .my-not-nav .my-messages img {
   float: left;
   padding: 10px;
   width: 62px;
 }
-.my-topheader .my-not-nav .my-messages .content {
-  padding: 5px;
+.my-topheader .my-not-nav .my-alerts .content .icon {
+  float: left;
+  color: #606060;
+  padding: 15px;
+  font-size: 18px;
 }
-.my-topheader .my-not-nav .my-messages .content li {
-  border-bottom: 1px solid #bababa;
+.my-topheader .my-not-nav .my-alerts .content .alert-body {
+  padding: 15px;
 }
-.my-topheader .my-not-nav .my-messages .content li:hover {
-  background: #eeeeee;
+.my-topheader .my-not-nav .my-alerts .content .alert-body span {
+  color: #606060;
 }
-.my-topheader .my-not-nav .my-messages .content li .date {
+.my-topheader .my-not-nav .my-alerts .content .alert-body .description {
+  display: table;
+  font-size: 12px;
+}
+.my-topheader .my-not-nav .my-alerts .content .alert-body .date {
   font-size: 10px;
   color: #bababa;
   position: relative;
-  top: 2px;
+  top: 3px;
+  float: right;
 }
-.my-topheader .my-not-nav .my-messages .foot {
-  padding: 10px;
-}
-.my-topheader .my-not-nav .my-messages .foot li {
-  text-align: center;
-}
-.my-topheader .my-not-nav .my-messages .foot li a {
-  font-size: 12px;
-  font-weight: bold;
+.my-topheader .my-not-nav .my-settings .content a {
   color: #606060;
+  font-size: 12px;
+}
+.my-topheader .my-not-nav .my-settings .content a .sett-body {
+  padding: 15px;
 }
 .my-topheader .my-profile-menu > a img {
   margin-right: 10px;
