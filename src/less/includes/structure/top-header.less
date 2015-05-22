@@ -37,7 +37,8 @@
 				//Notifications badge globe style
 				.badge {
 					position: absolute;
-			  	right: 5px;
+			  	top: 15px;
+			  	right: 5px;			  	
 			  	background-color: @my-primary-color;
 			  	padding: 3px 3px;
 			  	font-weight: normal;
@@ -65,14 +66,23 @@
 			.notif-body{
 				min-height:65px;
 				padding: 15px;
-				span {
+
+				span{
+					color: @my-text-gray-dark;
+				}
+				.name {
 					font-weight: bold;
+				}
+				.description{
+					display: table;
+					font-size: 12px;
 				}
 			}
 
 			img{
 				float:left;
 				padding:10px;
+				width: 62px;
 			}
 
 			.content {
@@ -80,9 +90,15 @@
 				li{
 					border-bottom: 1px solid @my-text-gray-light;
 
+					&:hover{
+						background: @gray-lighter;
+					}
+
 					.date {
 						font-size: 10px;
 						color: @my-text-gray-light;
+						position: relative;
+  					top: 2px;
 					}
 				}
 			}
@@ -91,6 +107,12 @@
 				padding: 10px;
 				li{
 					text-align:center;
+					a{
+						font-size: 12px;
+	  				font-weight: bold;
+	  				color: @my-text-gray-dark;
+					}
+
 				}
 			}
 		}
@@ -104,12 +126,14 @@
 	
 	//Profile Menu
 	.my-profile-menu{
-
-		> li{
-			> a{
-				img {
-				  margin-right: 10px;
-				}
+		> a{
+			img {
+			  margin-right: 10px;
+			  position: relative;
+ 				top: -3px;
+			}
+			.caret{
+				margin-left: 10px;
 			}
 		}
 	}

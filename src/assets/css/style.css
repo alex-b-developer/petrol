@@ -6604,6 +6604,7 @@ a:link {
 }
 .my-topheader .navbar-nav > li > a .badge {
   position: absolute;
+  top: 15px;
   right: 5px;
   background-color: #1ed1af;
   padding: 3px 3px;
@@ -6621,11 +6622,19 @@ a:link {
   padding: 15px;
 }
 .my-topheader .my-not-nav .my-notifications .notif-body span {
+  color: #606060;
+}
+.my-topheader .my-not-nav .my-notifications .notif-body .name {
   font-weight: bold;
+}
+.my-topheader .my-not-nav .my-notifications .notif-body .description {
+  display: table;
+  font-size: 12px;
 }
 .my-topheader .my-not-nav .my-notifications img {
   float: left;
   padding: 10px;
+  width: 62px;
 }
 .my-topheader .my-not-nav .my-notifications .content {
   padding: 5px;
@@ -6633,9 +6642,14 @@ a:link {
 .my-topheader .my-not-nav .my-notifications .content li {
   border-bottom: 1px solid #bababa;
 }
+.my-topheader .my-not-nav .my-notifications .content li:hover {
+  background: #eeeeee;
+}
 .my-topheader .my-not-nav .my-notifications .content li .date {
   font-size: 10px;
   color: #bababa;
+  position: relative;
+  top: 2px;
 }
 .my-topheader .my-not-nav .my-notifications .foot {
   padding: 10px;
@@ -6643,8 +6657,18 @@ a:link {
 .my-topheader .my-not-nav .my-notifications .foot li {
   text-align: center;
 }
-.my-topheader .my-profile-menu > li > a img {
+.my-topheader .my-not-nav .my-notifications .foot li a {
+  font-size: 12px;
+  font-weight: bold;
+  color: #606060;
+}
+.my-topheader .my-profile-menu > a img {
   margin-right: 10px;
+  position: relative;
+  top: -3px;
+}
+.my-topheader .my-profile-menu > a .caret {
+  margin-left: 10px;
 }
 /* LEFTSIDEBAR */
 .my-main-sidebar-container {
