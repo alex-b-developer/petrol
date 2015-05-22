@@ -37,12 +37,8 @@ nav.navbar.navbar-default.my-topheader
       ul.nav.navbar-nav.navbar-right        
         include /includes/structure/top-header/profile-dropdown.jade
       ul.nav.navbar-nav.navbar-right.my-not-nav
-        include /includes/structure/top-header/notifications-dropdown.jade
-        li
-          a(href='#')
-            i.icon.icon-basic_elaboration_message_dots
-        li
-          a(href='#')
-            i.icon.icon-basic_gear
+        include /includes/structure/top-header/alerts-dropdown.jade
+        include /includes/structure/top-header/messages-dropdown.jade
+        include /includes/structure/top-header/settings-dropdown.jade
     // /.navbar-collapse
   // /.container-fluid

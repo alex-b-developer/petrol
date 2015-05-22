@@ -6614,50 +6614,50 @@ a:link {
   padding: 0;
   width: 310px;
 }
-.my-topheader .my-not-nav .my-notifications {
+.my-topheader .my-not-nav .my-messages {
   color: #000;
 }
-.my-topheader .my-not-nav .my-notifications .notif-body {
+.my-topheader .my-not-nav .my-messages .mess-body {
   min-height: 65px;
   padding: 15px;
 }
-.my-topheader .my-not-nav .my-notifications .notif-body span {
+.my-topheader .my-not-nav .my-messages .mess-body span {
   color: #606060;
 }
-.my-topheader .my-not-nav .my-notifications .notif-body .name {
+.my-topheader .my-not-nav .my-messages .mess-body .name {
   font-weight: bold;
 }
-.my-topheader .my-not-nav .my-notifications .notif-body .description {
+.my-topheader .my-not-nav .my-messages .mess-body .description {
   display: table;
   font-size: 12px;
 }
-.my-topheader .my-not-nav .my-notifications img {
+.my-topheader .my-not-nav .my-messages img {
   float: left;
   padding: 10px;
   width: 62px;
 }
-.my-topheader .my-not-nav .my-notifications .content {
+.my-topheader .my-not-nav .my-messages .content {
   padding: 5px;
 }
-.my-topheader .my-not-nav .my-notifications .content li {
+.my-topheader .my-not-nav .my-messages .content li {
   border-bottom: 1px solid #bababa;
 }
-.my-topheader .my-not-nav .my-notifications .content li:hover {
+.my-topheader .my-not-nav .my-messages .content li:hover {
   background: #eeeeee;
 }
-.my-topheader .my-not-nav .my-notifications .content li .date {
+.my-topheader .my-not-nav .my-messages .content li .date {
   font-size: 10px;
   color: #bababa;
   position: relative;
   top: 2px;
 }
-.my-topheader .my-not-nav .my-notifications .foot {
+.my-topheader .my-not-nav .my-messages .foot {
   padding: 10px;
 }
-.my-topheader .my-not-nav .my-notifications .foot li {
+.my-topheader .my-not-nav .my-messages .foot li {
   text-align: center;
 }
-.my-topheader .my-not-nav .my-notifications .foot li a {
+.my-topheader .my-not-nav .my-messages .foot li a {
   font-size: 12px;
   font-weight: bold;
   color: #606060;
