@@ -37,9 +37,7 @@ mixin left-sidebar(active)
 
   block left-sidebar-structure
     //Here goes the sidebar structure
-    .my-main-sidebar-container
-      .my-sidebar-toggle
-        span(class="#{conf.sidebarIconPrefix} #{conf.sidebarIconPrefix}-arrows_hamburger2")
+    #my-main-sidebar-container.my-main-sidebar-container.collapse.navbar-collapse
       .content
         include /includes/structure/left-sidebar/top.jade
         include /includes/structure/left-sidebar/menu-elements.jade

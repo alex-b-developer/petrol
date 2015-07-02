@@ -47,6 +47,14 @@
 		}
 	}
 
+	//Avatar menu
+	.my-avatar-nav {
+		@media @phone{
+			display: table-cell;
+  		float: left;
+		}
+	}
+
 	//Notification menus
 	.my-not-nav{
 		
@@ -156,6 +164,10 @@
 				}
 			}
 		}
+		@media @phone{
+			display: flex;
+  		float: right;
+		}
 	}
 	
 	//Profile Menu
@@ -170,5 +182,10 @@
 				margin-left: 10px;
 			}
 		}
+	}
+
+	//Sidebarbutton
+	.my-sidebar-toggle{
+		float:left;
 	}
 }

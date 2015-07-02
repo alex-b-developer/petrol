@@ -2,15 +2,16 @@ nav.navbar.navbar-default.my-topheader
   .container-fluid
     // Brand and toggle get grouped for better mobile display
     .navbar-header
-      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#my-topheader-collapse')
+      button.navbar-toggle.collapsed.my-sidebar-toggle(type='button', data-toggle='collapse', data-target='#my-main-sidebar-container')
         span.sr-only Toggle navigation
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
+        span(class="#{conf.sidebarIconPrefix} #{conf.sidebarIconPrefix}-arrows_hamburger1")
+      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#topmenu')
+        span.sr-only Toggle navigation
+        span(class="#{conf.sidebarIconPrefix} #{conf.sidebarIconPrefix}-arrows_glide_vertical")
       a.navbar-brand(href='#') 
     // Collect the nav links, forms, and other content for toggling
-    #my-topheader-collapse.collapse.navbar-collapse
-      ul.nav.navbar-nav
+    #my-topheader-collapse
+      ul#topmenu.nav.navbar-nav.collapse.navbar-collapse
         li.active
           a(href='#')
             | About 
@@ -34,7 +35,7 @@ nav.navbar.navbar-default.my-topheader
             li.divider
             li
               a(href='#') One more separated link
-      ul.nav.navbar-nav.navbar-right        
+      ul.nav.navbar-nav.navbar-right.my-avatar-nav        
         include /includes/structure/top-header/profile-dropdown.jade
       ul.nav.navbar-nav.navbar-right.my-not-nav
         include /includes/structure/top-header/alerts-dropdown.jade
