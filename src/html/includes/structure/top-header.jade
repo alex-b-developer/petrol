@@ -35,11 +35,12 @@ nav.navbar.navbar-default.my-topheader
             li.divider
             li
               a(href='#') One more separated link
+      ul.nav.navbar-nav.navbar-right
+        include /includes/structure/top-header/settings-dropdown.jade
       ul.nav.navbar-nav.navbar-right.my-avatar-nav        
         include /includes/structure/top-header/profile-dropdown.jade
       ul.nav.navbar-nav.navbar-right.my-not-nav
         include /includes/structure/top-header/alerts-dropdown.jade
         include /includes/structure/top-header/messages-dropdown.jade
-        include /includes/structure/top-header/settings-dropdown.jade
     // /.navbar-collapse
   // /.container-fluid

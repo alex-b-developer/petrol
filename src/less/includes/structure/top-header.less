@@ -44,6 +44,23 @@
 			  	font-weight: normal;
 				}
 			}
+			> .dropdown-menu {
+				margin-top: 10px;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+				>li{
+					>a{
+						padding: 10px 20px;
+						color:@my-text-gray;
+
+						&:hover{
+							background:@my-primary-color;
+							color:@my-white;
+						}
+					}
+				}
+			}
 		}
 	}
 
@@ -57,32 +74,32 @@
 
 	//Notification menus
 	.my-not-nav{
-		
+		margin-right: 30px;
 		//General style
 		> li {
 
 		  .dropdown-menu {
 			  padding: 0;
-			  width: 310px;
+			  width: 325px;
 
 			  .content {
-					padding: 5px;
 					li{
 						border-bottom: 1px solid @my-text-gray-light;
 
 						&:hover{
-							background: @gray-lighter;
+							background: @my-topheader-item-active;
 						}
 					}
 				}
 				.foot {
-					padding: 10px;
+					padding: 15px;
+					background: @my-primary-color;					
 					li{
 						text-align:center;
 						a{
 							font-size: 12px;
 		  				font-weight: bold;
-		  				color: @my-text-gray-dark;
+		  				color: @my-white;
 						}
 					}
 				}
@@ -94,7 +111,7 @@
 			color:#000;
 
 			.mess-body{
-				min-height:65px;
+				min-height:85px;
 				padding: 15px;
 
 				span{
@@ -105,11 +122,10 @@
 				}
 				.description{
 					display: table;
-					font-size: 12px;
+					font-size: 14px;
 				}
 				.date {
 					font-size: 10px;
-					color: @my-text-gray-light;
 					position: relative;
 					top: 2px;
 					float: right;
@@ -119,7 +135,7 @@
 			img{
 				float:left;
 				padding:10px;
-				width: 62px;
+				width: 70px;
 			}
 		}
 
@@ -128,45 +144,54 @@
 			.content{
 				.icon{
 					float:left;
-					color: @my-text-gray-dark;
-					padding: 15px;
-					font-size: 18px;
+					color: @my-text-gray-light;
+					padding: 20px;
+					font-size: 35px;
 				}
 				.alert-body{
-					padding: 15px;
+					padding: 15px 15px 15px 0;
+					min-height: 85px;
+					display: table;
 					span{
 						color: @my-text-gray-dark;
 					}
-					.description{
-						display: table;
-						font-size: 12px;
+					.name{
+						font-weight: bold;
+						color:@my-primary-color;
+					}
+					.description{						
+						font-size: 14px;
 					}
 					.date{
+						display: table;
 						font-size: 10px;
-						color: @my-text-gray-light;
-						position: relative;
-						top: 3px;
-						float: right;
+						margin-top: 5px;
 					}
 				}
 			}
 		}
 
-		//Settings dropdown
-		.my-settings{
-			.content{
-				a{
-					color: @my-text-gray-dark;
-					font-size: 12px;
-					.sett-body{
-						padding: 15px;
-					}
-				}
-			}
-		}
 		@media @phone{
 			display: flex;
   		float: right;
+		}
+	}
+	//Settings dropdown
+	.my-settings{
+		border-left: 1px solid @my-text-gray-light;
+		> a{
+				i{
+					font-size: 25px;
+				}
+		}
+		.content{
+			a{
+				color: @my-text-gray-dark;
+				font-size: 12px;
+				.sett-body{
+					padding: 15px;
+				}
+			}
 		}
 	}
 	

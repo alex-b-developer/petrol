@@ -6627,27 +6627,42 @@ a:link {
   padding: 3px 3px;
   font-weight: normal;
 }
+.my-topheader .navbar-nav > li > .dropdown-menu {
+  margin-top: 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.my-topheader .navbar-nav > li > .dropdown-menu > li > a {
+  padding: 10px 20px;
+  color: #828282;
+}
+.my-topheader .navbar-nav > li > .dropdown-menu > li > a:hover {
+  background: #1ed1af;
+  color: #f9f9f9;
+}
 @media (max-width: 767px) {
   .my-topheader .my-avatar-nav {
     display: table-cell;
     float: left;
   }
 }
+.my-topheader .my-not-nav {
+  margin-right: 30px;
+}
 .my-topheader .my-not-nav > li .dropdown-menu {
   padding: 0;
-  width: 310px;
-}
-.my-topheader .my-not-nav > li .dropdown-menu .content {
-  padding: 5px;
+  width: 325px;
 }
 .my-topheader .my-not-nav > li .dropdown-menu .content li {
   border-bottom: 1px solid #bababa;
 }
 .my-topheader .my-not-nav > li .dropdown-menu .content li:hover {
-  background: #eeeeee;
+  background: #e7e7e7;
 }
 .my-topheader .my-not-nav > li .dropdown-menu .foot {
-  padding: 10px;
+  padding: 15px;
+  background: #1ed1af;
 }
 .my-topheader .my-not-nav > li .dropdown-menu .foot li {
   text-align: center;
@@ -6655,13 +6670,13 @@ a:link {
 .my-topheader .my-not-nav > li .dropdown-menu .foot li a {
   font-size: 12px;
   font-weight: bold;
-  color: #606060;
+  color: #f9f9f9;
 }
 .my-topheader .my-not-nav .my-messages {
   color: #000;
 }
 .my-topheader .my-not-nav .my-messages .mess-body {
-  min-height: 65px;
+  min-height: 85px;
   padding: 15px;
 }
 .my-topheader .my-not-nav .my-messages .mess-body span {
@@ -6672,11 +6687,10 @@ a:link {
 }
 .my-topheader .my-not-nav .my-messages .mess-body .description {
   display: table;
-  font-size: 12px;
+  font-size: 14px;
 }
 .my-topheader .my-not-nav .my-messages .mess-body .date {
   font-size: 10px;
-  color: #bababa;
   position: relative;
   top: 2px;
   float: right;
@@ -6684,43 +6698,52 @@ a:link {
 .my-topheader .my-not-nav .my-messages img {
   float: left;
   padding: 10px;
-  width: 62px;
+  width: 70px;
 }
 .my-topheader .my-not-nav .my-alerts .content .icon {
   float: left;
-  color: #606060;
-  padding: 15px;
-  font-size: 18px;
+  color: #bababa;
+  padding: 20px;
+  font-size: 35px;
 }
 .my-topheader .my-not-nav .my-alerts .content .alert-body {
-  padding: 15px;
+  padding: 15px 15px 15px 0;
+  min-height: 85px;
+  display: table;
 }
 .my-topheader .my-not-nav .my-alerts .content .alert-body span {
   color: #606060;
 }
+.my-topheader .my-not-nav .my-alerts .content .alert-body .name {
+  font-weight: bold;
+  color: #1ed1af;
+}
 .my-topheader .my-not-nav .my-alerts .content .alert-body .description {
-  display: table;
-  font-size: 12px;
+  font-size: 14px;
 }
 .my-topheader .my-not-nav .my-alerts .content .alert-body .date {
+  display: table;
   font-size: 10px;
-  color: #bababa;
-  position: relative;
-  top: 3px;
-  float: right;
-}
-.my-topheader .my-not-nav .my-settings .content a {
-  color: #606060;
-  font-size: 12px;
-}
-.my-topheader .my-not-nav .my-settings .content a .sett-body {
-  padding: 15px;
+  margin-top: 5px;
 }
 @media (max-width: 767px) {
   .my-topheader .my-not-nav {
     display: flex;
     float: right;
   }
+}
+.my-topheader .my-settings {
+  border-left: 1px solid #bababa;
+}
+.my-topheader .my-settings > a i {
+  font-size: 25px;
+}
+.my-topheader .my-settings .content a {
+  color: #606060;
+  font-size: 12px;
+}
+.my-topheader .my-settings .content a .sett-body {
+  padding: 15px;
 }
 .my-topheader .my-profile-menu > a img {
   margin-right: 10px;
