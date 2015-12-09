@@ -24,6 +24,9 @@
 		},
 		"linea-iconset":{
 			"css":["linea-io/linea.css"]
+		},
+		"simple-line-icons":{
+			"css":["simple-line-icons/css/simple-line-icons.css"]
 		}
 	}
 }

@@ -20,6 +20,7 @@
     "jquery": ">= 1.9.1",
     "open-sans": "latest",
     "lato": "~0.3.0",
-    "linea-io": "~1.0.0"
+    "linea-io": "~1.0.0",
+    "simple-line-icons": "~2.2.3"
   }
 }

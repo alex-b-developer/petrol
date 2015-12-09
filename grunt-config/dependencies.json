@@ -32,5 +32,10 @@
       "linea-io" : "linea-io/linea.css",
       "linea-io/fonts" : "linea-io/fonts"
     }
+  },
+  "simple-line-icons":{
+    "files":{
+      "simple-line-icons" : "simple-line-icons"
+    }
   }
 }
