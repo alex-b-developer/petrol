@@ -10,37 +10,12 @@ nav.navbar.navbar-default.my-topheader
         span(class="#{conf.sidebarIconPrefix} #{conf.sidebarIconPrefix}-arrows_glide_vertical")
       a.navbar-brand(href='#') 
     // Collect the nav links, forms, and other content for toggling
-    #my-topheader-collapse
-      ul#topmenu.nav.navbar-nav.collapse.navbar-collapse
-        li.active
-          a(href='#')
-            | About 
-            span.sr-only (current)
-        li
-          a(href='#') Features
-        li.dropdown
-          a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-expanded='false')
-            | Tasks 
-            span.caret
-          ul.dropdown-menu(role='menu')
-            li
-              a(href='#') Action
-            li
-              a(href='#') Another action
-            li
-              a(href='#') Something else here
-            li.divider
-            li
-              a(href='#') Separated link
-            li.divider
-            li
-              a(href='#') One more separated link
-      ul.nav.navbar-nav.navbar-right
-        include /includes/structure/top-header/settings-dropdown.jade
+    #my-topheader-collapse       
       ul.nav.navbar-nav.navbar-right.my-avatar-nav        
         include /includes/structure/top-header/profile-dropdown.jade
       ul.nav.navbar-nav.navbar-right.my-not-nav
         include /includes/structure/top-header/alerts-dropdown.jade
         include /includes/structure/top-header/messages-dropdown.jade
+        include /includes/structure/top-header/settings-dropdown.jade
     // /.navbar-collapse
   // /.container-fluid
