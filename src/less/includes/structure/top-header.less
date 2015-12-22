@@ -1,14 +1,15 @@
 .my-topheader{
-	min-height: 50px;
+  min-height: 50px;
   margin-bottom: 0px;
   border: none;
+  background: @my-primary-color;
 	
 	//Logo & toggle button
 	.navbar-header{
 
 		.navbar-brand{
 			width: @my-sidebar-width;
-			background: @my-secondary-color url("@{img-path}/petrol-logo.png") center no-repeat;
+			background: @my-secondary-color-dark url("@{img-path}/petrol-logo.png") center no-repeat;
 			background-size: 160px;
 			height:80px;
 		}
@@ -28,6 +29,14 @@
 				padding-bottom: 0;
 				line-height: @my-topheader-height;
 				font-size: 16px;
+				color: @my-white;
+				&:hover{
+					color: @my-white;
+					background: @my-primary-color-light;
+				}
+				&:focus{
+					color: @my-white;
+				}
 
 				//Icon style inside menu
 				.icon{
@@ -36,16 +45,16 @@
 
 				//Notifications badge globe style
 				.badge {
-					position: absolute;
+				position: absolute;
 			  	top: 15px;
 			  	right: 5px;			  	
-			  	background-color: @my-primary-color;
+			  	background-color: @my-alternative-color-1;
 			  	padding: 3px 3px;
 			  	font-weight: normal;
 				}
 			}
 			> .dropdown-menu {
-				margin-top: 10px;
+				margin-top: 0px;
 				-webkit-border-radius: 5px;
 				-moz-border-radius: 5px;
 				border-radius: 5px;
@@ -61,6 +70,20 @@
 					}
 				}
 			}
+		}
+		> .open{
+				> a {
+					background: @my-primary-color-light;
+					color:@my-white;
+					&:hover{
+						background: @my-primary-color-light;
+						color:@my-white;
+					}
+					&:focus{
+						background: @my-primary-color-light;
+						color:@my-white;
+					}
+				}
 		}
 	}
 
