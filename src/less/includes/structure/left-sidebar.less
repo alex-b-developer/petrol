@@ -65,14 +65,15 @@
 
 .my-sidebar-elements-class{
 
-	li{
+	//First level
+	> li{
 		
 		.active{
 			color: @my-sidebar-text-on;
 			border-bottom: 1px solid @my-primary-color;
 		}
 
-		a{
+		> a{
 			position: relative; 
 			display: block;
 			width: 220px;
@@ -90,8 +91,8 @@
 			-ms-transition: color .3s ease;
 
 			&:hover{
-			text-decoration:none;
-			color:@my-sidebar-text-on;
+				text-decoration:none;
+				color:@my-sidebar-text-on;
 			}
 
 			i{
