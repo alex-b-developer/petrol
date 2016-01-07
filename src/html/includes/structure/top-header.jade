@@ -2,13 +2,10 @@ nav.navbar.navbar-default.my-topheader
   .container-fluid
     // Brand and toggle get grouped for better mobile display
     .navbar-header
+      a.navbar-brand(href='#') 
       button.navbar-toggle.collapsed.my-sidebar-toggle(type='button', data-toggle='collapse', data-target='#my-main-sidebar-container')
         span.sr-only Toggle navigation
-        span(class="#{conf.sidebarIconPrefix} #{conf.sidebarIconPrefix}-arrows_hamburger1")
-      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#topmenu')
-        span.sr-only Toggle navigation
-        span(class="#{conf.sidebarIconPrefix} #{conf.sidebarIconPrefix}-arrows_glide_vertical")
-      a.navbar-brand(href='#') 
+        span(class="#{conf.sidebarIconPrefix} #{conf.sidebarIconPrefix}-menu")
     // Collect the nav links, forms, and other content for toggling
     #my-topheader-collapse       
       ul.nav.navbar-nav.navbar-right.my-avatar-nav        

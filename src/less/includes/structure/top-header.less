@@ -12,10 +12,24 @@
 			background: @pe-topheader-logo-bg url("@{img-path}/petrol-logo.png") center no-repeat;
 			background-size: 175px;
 			height:80px;
+
+			@media @phone{
+				height:56px;
+			}
 		}
 		
 		@media @phone{
-			background-color: @my-secondary-color;
+			background-color: @pe-topheader-logo-bg;			
+		}
+
+		.navbar-toggle{
+			padding: 16px;
+			background: @pe-navbar-toggle-bg;
+
+			span
+			{
+				font-size: 20px;
+			}
 		}
 	}
 	
@@ -215,7 +229,7 @@
 
 		@media @phone{
 			display: flex;
-  		float: right;
+  		    float: right;
 		}
 	}
 	//Settings dropdown
@@ -252,10 +266,5 @@
 				margin-left: 10px;
 			}
 		}
-	}
-
-	//Sidebarbutton
-	.my-sidebar-toggle{
-		float:left;
 	}
 }

@@ -6784,9 +6784,21 @@ a:link {
   height: 80px;
 }
 @media (max-width: 767px) {
-  .my-topheader .navbar-header {
-    background-color: #2a374d;
+  .my-topheader .navbar-header .navbar-brand {
+    height: 56px;
   }
+}
+@media (max-width: 767px) {
+  .my-topheader .navbar-header {
+    background-color: #222c3d;
+  }
+}
+.my-topheader .navbar-header .navbar-toggle {
+  padding: 16px;
+  background: #283347;
+}
+.my-topheader .navbar-header .navbar-toggle span {
+  font-size: 20px;
 }
 .my-topheader .navbar-nav > li > a {
   padding-top: 0;
@@ -6953,9 +6965,6 @@ a:link {
 }
 .my-topheader .my-profile-menu > a .caret {
   margin-left: 10px;
-}
-.my-topheader .my-sidebar-toggle {
-  float: left;
 }
 /* LEFTSIDEBAR */
 .my-main-sidebar-container {
