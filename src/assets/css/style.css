@@ -6780,7 +6780,7 @@ a:link {
 .my-topheader .navbar-header .navbar-brand {
   width: 220px;
   background: #222c3d url("../img/petrol-logo.png") center no-repeat;
-  background-size: 160px;
+  background-size: 175px;
   height: 80px;
 }
 @media (max-width: 767px) {
