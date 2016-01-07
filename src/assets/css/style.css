@@ -6807,6 +6807,12 @@ a:link {
   font-size: 16px;
   color: #959595;
 }
+@media (max-width: 767px) {
+  .my-topheader .navbar-nav > li > a {
+    line-height: 56px;
+    padding: 0;
+  }
+}
 .my-topheader .navbar-nav > li > a:hover {
   color: #f9f9f9;
   background: #68afa6;
@@ -6832,6 +6838,11 @@ a:link {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
+@media (max-width: 767px) {
+  .my-topheader .navbar-nav > li > .dropdown-menu {
+    position: absolute;
+  }
+}
 .my-topheader .navbar-nav > li > .dropdown-menu > li > a {
   padding: 10px 20px;
   color: #828282;
@@ -6854,12 +6865,18 @@ a:link {
 }
 @media (max-width: 767px) {
   .my-topheader .my-avatar-nav {
+    margin: 0px;
     display: table-cell;
     float: left;
   }
 }
 .my-topheader .my-not-nav {
   margin-right: 15px;
+}
+@media (max-width: 767px) {
+  .my-topheader .my-not-nav {
+    margin: 0px;
+  }
 }
 .my-topheader .my-not-nav > li > a {
   padding-left: 13px;

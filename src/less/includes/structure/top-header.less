@@ -41,10 +41,14 @@
 			> a{
 				padding-top: 0;
 				padding-bottom: 0;
-				line-height: @my-topheader-height;
+				line-height: @pe-topheader-height;
 				font-size: 16px;
 				color: @pe-topheader-color;
 
+				@media @phone{
+					line-height: @pe-topheader-phone-height;	
+					padding: 0;		
+				}
 				&:hover{
 					color: @my-white;
 					background: @my-primary-color-light;
@@ -76,6 +80,9 @@
 				-moz-border-radius: 5px;
 				border-radius: 5px;
 
+				@media @phone{
+					position: absolute;
+				}
 				>li{
 
 					>a{
@@ -114,14 +121,19 @@
 	.my-avatar-nav {
 
 		@media @phone{
+			margin: 0px;
 			display: table-cell;
-  		float: left;
+  		    float: left;
 		}
 	}
 
 	//Notification menus
 	.my-not-nav{
 		margin-right: 15px;
+
+		@media @phone{
+			margin: 0px;
+		}
 
 		//General style
 		> li {
