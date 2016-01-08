@@ -29,6 +29,8 @@
 
 	@media @phone {
 		width: auto;
+		position: relative;
+    	top: -56px;
 	}
 }
 
@@ -95,6 +97,9 @@
 				color:@my-sidebar-text-on;
 			}
 
+			@media @phone {
+				width: 100%;
+			}	
 			i{
 				margin-right:20px;
 			}
@@ -125,6 +130,11 @@
 				  	opacity:1;
 				  	.rotate(0deg);
 				  }
+				}
+
+				@media @phone {
+					left: initial;
+   					right: 20px;
 				}
 			}
 		}
