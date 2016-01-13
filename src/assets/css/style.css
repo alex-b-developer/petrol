@@ -6882,13 +6882,13 @@ a:link {
   width: 325px;
 }
 .my-topheader .my-not-nav > li .dropdown-menu .content li {
-  border-bottom: 1px solid #bababa;
+  border-bottom: 1px solid #e7e7e7;
 }
 .my-topheader .my-not-nav > li .dropdown-menu .content li:hover {
   background: #e7e7e7;
 }
 .my-topheader .my-not-nav > li .dropdown-menu .foot {
-  padding: 15px;
+  padding: 10px;
   background: #e7e7e7;
 }
 .my-topheader .my-not-nav > li .dropdown-menu .foot li {
@@ -6900,8 +6900,7 @@ a:link {
   color: #959595;
 }
 .my-topheader .my-not-nav .my-messages .mess-body {
-  min-height: 85px;
-  padding: 15px;
+  padding: 10px;
 }
 .my-topheader .my-not-nav .my-messages .mess-body span {
   color: #606060;
@@ -6921,18 +6920,16 @@ a:link {
 }
 .my-topheader .my-not-nav .my-messages img {
   float: left;
-  padding: 10px;
-  width: 70px;
+  padding: 8px;
 }
 .my-topheader .my-not-nav .my-alerts .content .icon {
   float: left;
   color: #bababa;
-  padding: 27px 20px;
+  padding: 22px 20px;
   font-size: 35px;
 }
 .my-topheader .my-not-nav .my-alerts .content .alert-body {
-  padding: 15px 15px 15px 0;
-  min-height: 85px;
+  padding: 10px 10px 10px 0;
   display: table;
 }
 .my-topheader .my-not-nav .my-alerts .content .alert-body span {
@@ -6967,7 +6964,7 @@ a:link {
   font-size: 12px;
 }
 .my-topheader .my-settings .dropdown-menu .content a .sett-body {
-  padding: 15px;
+  padding: 10px;
   font-size: 14px;
 }
 .my-topheader .my-settings .dropdown-menu .content a .sett-body .name {
