@@ -3,6 +3,17 @@
 	width: @my-sidebar-width;
 	background: @pe-leftsidebar-bg;
 
+	&:before {
+		position: fixed;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		content: "";
+	    z-index: -1;
+	    width: inherit;
+	    background-color: inherit;
+	} 
+
 	.my-sidebar-toggle{
 		padding: 10px 0;
 		display: none;
