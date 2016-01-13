@@ -6956,15 +6956,22 @@ a:link {
     float: right;
   }
 }
-.my-topheader .my-settings > a i {
+.my-topheader .my-settings .dropdown-menu {
+  width: initial!important;
+}
+.my-topheader .my-settings .dropdown-menu > a i {
   font-size: 25px;
 }
-.my-topheader .my-settings .content a {
+.my-topheader .my-settings .dropdown-menu .content a {
   color: #606060;
   font-size: 12px;
 }
-.my-topheader .my-settings .content a .sett-body {
+.my-topheader .my-settings .dropdown-menu .content a .sett-body {
   padding: 15px;
+  font-size: 14px;
+}
+.my-topheader .my-settings .dropdown-menu .content a .sett-body .name {
+  margin-left: 10px;
 }
 .my-topheader .my-profile-menu {
   margin-right: 10px;

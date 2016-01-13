@@ -240,17 +240,27 @@
 	}
 	//Settings dropdown
 	.my-settings{
-		> a{
-				i{
-					font-size: 25px;
-				}
-		}
-		.content{
-			a{
-				color: @my-text-gray-dark;
-				font-size: 12px;
-				.sett-body{
-					padding: 15px;
+		.dropdown-menu{
+			width: initial!important;
+
+			> a{
+					i{
+						font-size: 25px;
+					}
+			}
+			.content{
+				a{
+					color: @my-text-gray-dark;
+					font-size: 12px;
+					.sett-body{
+						padding: 15px;
+						font-size: 14px;
+
+						.name{
+							margin-left: 10px;
+
+						}
+					}
 				}
 			}
 		}
