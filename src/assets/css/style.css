@@ -6889,7 +6889,7 @@ a:link {
 }
 .my-topheader .my-not-nav > li .dropdown-menu .foot {
   padding: 15px;
-  background: #58a49f;
+  background: #e7e7e7;
 }
 .my-topheader .my-not-nav > li .dropdown-menu .foot li {
   text-align: center;
@@ -6897,7 +6897,7 @@ a:link {
 .my-topheader .my-not-nav > li .dropdown-menu .foot li a {
   font-size: 12px;
   font-weight: bold;
-  color: #f9f9f9;
+  color: #959595;
 }
 .my-topheader .my-not-nav .my-messages .mess-body {
   min-height: 85px;
