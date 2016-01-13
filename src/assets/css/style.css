@@ -6996,6 +6996,7 @@ a:link {
   z-index: -1;
   width: inherit;
   background-color: inherit;
+  height: 100%;
 }
 .my-main-sidebar-container .my-sidebar-toggle {
   padding: 10px 0;
