@@ -6806,18 +6806,14 @@ a:link {
   font-size: 16px;
   color: #959595;
 }
+.my-topheader .navbar-nav > li > a:hover {
+  color: #959595;
+}
 @media (max-width: 767px) {
   .my-topheader .navbar-nav > li > a {
     line-height: 56px;
     padding: 0;
   }
-}
-.my-topheader .navbar-nav > li > a:hover {
-  color: #f9f9f9;
-  background: #68afa6;
-}
-.my-topheader .navbar-nav > li > a:focus {
-  color: #f9f9f9;
 }
 .my-topheader .navbar-nav > li > a .icon {
   vertical-align: middle;
@@ -6851,16 +6847,16 @@ a:link {
   color: #f9f9f9;
 }
 .my-topheader .navbar-nav > .open > a {
-  background: #68afa6;
-  color: #f9f9f9;
+  background-color: initial;
+  color: #959595;
 }
 .my-topheader .navbar-nav > .open > a:hover {
-  background: #68afa6;
-  color: #f9f9f9;
+  background-color: initial;
+  color: #959595;
 }
 .my-topheader .navbar-nav > .open > a:focus {
-  background: #68afa6;
-  color: #f9f9f9;
+  background-color: initial;
+  color: #959595;
 }
 @media (max-width: 767px) {
   .my-topheader .my-avatar-nav {
@@ -6903,9 +6899,6 @@ a:link {
   font-weight: bold;
   color: #f9f9f9;
 }
-.my-topheader .my-not-nav .my-messages {
-  color: #000;
-}
 .my-topheader .my-not-nav .my-messages .mess-body {
   min-height: 85px;
   padding: 15px;
@@ -6934,7 +6927,7 @@ a:link {
 .my-topheader .my-not-nav .my-alerts .content .icon {
   float: left;
   color: #bababa;
-  padding: 20px;
+  padding: 27px 20px;
   font-size: 35px;
 }
 .my-topheader .my-not-nav .my-alerts .content .alert-body {

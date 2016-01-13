@@ -44,16 +44,13 @@
 				font-size: 16px;
 				color: @pe-topheader-color;
 
+				&:hover{
+					color: @pe-topheader-color;
+				}
+
 				@media @phone{
 					line-height: @pe-topheader-phone-height;	
 					padding: 0;		
-				}
-				&:hover{
-					color: @my-white;
-					background: @my-primary-color-light;
-				}
-				&:focus{
-					color: @my-white;
 				}
 
 				//Icon style inside menu
@@ -99,20 +96,20 @@
 
 		> .open{
 
-				> a {
-					background: @my-primary-color-light;
-					color:@my-white;
+			> a {
+				background-color: initial;
+				color: @pe-topheader-color;
 
-					&:hover{
-						background: @my-primary-color-light;
-						color:@my-white;
-					}
-
-					&:focus{
-						background: @my-primary-color-light;
-						color:@my-white;
-					}
+				&:hover{
+					background-color: initial;
+					color: @pe-topheader-color;
 				}
+
+				&:focus{
+					background-color: initial;
+					color: @pe-topheader-color;
+				}
+			}
 		}
 	}
 
@@ -175,7 +172,6 @@
 		
 		//Messages dropdown
 		.my-messages{
-			color:#000;
 
 			.mess-body{
 				min-height:85px;
@@ -212,7 +208,7 @@
 				.icon{
 					float:left;
 					color: @my-text-gray-light;
-					padding: 20px;
+					padding: 27px 20px;
 					font-size: 35px;
 				}
 				.alert-body{
