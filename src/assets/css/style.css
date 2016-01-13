@@ -6966,6 +6966,9 @@ a:link {
 .my-topheader .my-settings .content a .sett-body {
   padding: 15px;
 }
+.my-topheader .my-profile-menu {
+  margin-right: 10px;
+}
 .my-topheader .my-profile-menu > a img {
   margin-right: 10px;
   position: relative;
