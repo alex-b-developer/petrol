@@ -6880,12 +6880,28 @@ a:link {
   padding-left: 13px;
   padding-right: 13px;
 }
+.my-topheader .my-not-nav > li .arrow:after {
+  content: " ";
+  top: -20px;
+  left: 50%;
+  margin-left: -10px;
+  border-top-width: 0;
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-bottom-color: #959595;
+  border-style: solid;
+  border-width: 10px;
+}
 .my-topheader .my-not-nav > li .dropdown-menu {
   padding: 0;
   width: 325px;
   left: 50%;
   right: auto;
   transform: translate(-50%, 0);
+  border: 1px solid #959595;
 }
 .my-topheader .my-not-nav > li .dropdown-menu .content li {
   border-bottom: 1px solid #e7e7e7;
@@ -6896,6 +6912,7 @@ a:link {
 .my-topheader .my-not-nav > li .dropdown-menu .foot {
   padding: 10px;
   background: #e7e7e7;
+  border-top: 1ps solid #959595;
 }
 .my-topheader .my-not-nav > li .dropdown-menu .foot li {
   text-align: center;
