@@ -6883,6 +6883,9 @@ a:link {
 .my-topheader .my-not-nav > li .dropdown-menu {
   padding: 0;
   width: 325px;
+  left: 50%;
+  right: auto;
+  transform: translate(-50%, 0);
 }
 .my-topheader .my-not-nav > li .dropdown-menu .content li {
   border-bottom: 1px solid #e7e7e7;
