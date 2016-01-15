@@ -6832,9 +6832,9 @@ a:link {
 }
 .my-topheader .navbar-nav > li > .dropdown-menu {
   margin-top: 0px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
 }
 @media (max-width: 767px) {
   .my-topheader .navbar-nav > li > .dropdown-menu {
