@@ -14,7 +14,7 @@ var App = (function () {
   function my_close_open_items(sub_menu){
 
     // Part 1: We close all the open sub menus
-    var opened_submenus = $(".my-sidebar-elements-class > li.open").find(".sub-menu").not(sub_menu);
+    var opened_submenus = $(".pe-sidebar-elements-class > li.open").find(".sub-menu").not(sub_menu);
     
     var a = opened_submenus.prev();//Get the a element
     var icon_plus = $("> span.icon.icon-arrows_plus", a);
@@ -47,7 +47,7 @@ var App = (function () {
 
   function my_sidebar_func(){
 
-    $(".my-sidebar-elements-class > li > a").click(function( e ){//When we make click on main level item
+    $(".pe-sidebar-elements-class > li > a").click(function( e ){//When we make click on main level item
 
       var main_item = $(this).parent(); // We get the LI element
       var sub_menu = $(this).next(); //We get the sub menu UL element

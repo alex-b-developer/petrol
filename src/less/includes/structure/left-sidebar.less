@@ -1,6 +1,6 @@
 /* LEFTSIDEBAR */
-.my-main-sidebar-container{
-	width: @my-sidebar-width;
+.pe-main-sidebar-container{
+	width: @pe-sidebar-width;
 	background: @pe-leftsidebar-bg;
 
 	&:before {
@@ -15,20 +15,20 @@
 	    height: 100%;
 	} 
 
-	.my-sidebar-toggle{
+	.pe-sidebar-toggle{
 		padding: 10px 0;
 		display: none;
 		text-align: center;
-		background-color: @my-secondary-color-dark;
+		background-color: @pe-secondary-color-dark;
 		cursor: pointer;
 
 		&:hover{
-			background-color: lighten(@my-secondary-color-dark, 1%)
+			background-color: lighten(@pe-secondary-color-dark, 1%)
 		}
 	
 		span.icon{
 			font-size: 30px;
-			color: @my-sidebar-text-on;
+			color: @pe-sidebar-text-on;
 		}
 
 		@media @phone{
@@ -47,44 +47,44 @@
 }
 
 /* SEARCH */
-.my-search{
+.pe-search{
 	width:220px;
 	height:40px;
 	outline:0;
 	border:0;
 	padding:0 20px;
-	background: @my-secondary-color-dark url("@{img-path}/search-icon.png") 180px no-repeat;
-	color: @my-sidebar-text-on;
+	background: @pe-secondary-color-dark url("@{img-path}/search-icon.png") 180px no-repeat;
+	color: @pe-sidebar-text-on;
 	font-size:12px;
   font-family: Open Sans, sans-serif;
 }
 
-.my-search::-webkit-input-placeholder {
-  color: @my-sidebar-secondary-text-off;
+.pe-search::-webkit-input-placeholder {
+  color: @pe-sidebar-secondary-text-off;
 }
 
-.my-search:-moz-placeholder { /* Firefox 18- */
-  color:@my-sidebar-secondary-text-off;
+.pe-search:-moz-placeholder { /* Firefox 18- */
+  color:@pe-sidebar-secondary-text-off;
 }
 
-.my-search::-moz-placeholder {  /* Firefox 19+ */
-  color: @my-sidebar-secondary-text-off;
+.pe-search::-moz-placeholder {  /* Firefox 19+ */
+  color: @pe-sidebar-secondary-text-off;
 }
 
 :-ms-input-placeholder {  
-  color: @my-sidebar-secondary-text-off;
+  color: @pe-sidebar-secondary-text-off;
 }
 
 /* MENU ELEMENTS */
 
-.my-sidebar-elements-class{
+.pe-sidebar-elements-class{
 
 	//First level
 	> li{
 		
 		.active{
-			color: @my-sidebar-text-on;
-			border-bottom: 1px solid @my-primary-color;
+			color: @pe-sidebar-text-on;
+			border-bottom: 1px solid @pe-primary-color;
 		}
 
 		> a{
@@ -106,7 +106,7 @@
 
 			&:hover{
 				text-decoration:none;
-				color:@my-sidebar-text-on;
+				color:@pe-sidebar-text-on;
 			}
 
 			@media @phone {
@@ -125,7 +125,7 @@
 				&.icon-arrows_plus{
 				  opacity:1;				
 				  .rotate(0deg);
-				  .transition(@my-sidebar-right-icons-transition);
+				  .transition(@pe-sidebar-right-icons-transition);
 
 				  &.rotate{
 				  	opacity:0;
@@ -136,7 +136,7 @@
 				&.icon-arrows_minus{
 				  opacity:0;
 				  .rotate(-90deg);
-				  .transition(@my-sidebar-right-icons-transition);
+				  .transition(@pe-sidebar-right-icons-transition);
 
 				  &.rotate{
 				  	opacity:1;
@@ -155,14 +155,14 @@
 
 ul.sub-menu{
 	display:none; 
-	background: @my-secondary-color-dark;
+	background: @pe-secondary-color-dark;
 	padding:10px 0;
 
 	li{
 		
 		/* 
 		.active{
-			color: @my-sidebar-text-on;
+			color: @pe-sidebar-text-on;
 		} */
 
 		a{
