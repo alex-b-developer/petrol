@@ -6897,7 +6897,7 @@ a:link {
 }
 .my-topheader .my-not-nav > li .dropdown-menu {
   padding: 0;
-  width: 325px;
+  width: 270px;
   left: 50%;
   right: auto;
   transform: translate(-50%, 0);
@@ -6912,7 +6912,7 @@ a:link {
 .my-topheader .my-not-nav > li .dropdown-menu .foot {
   padding: 10px;
   background: #e7e7e7;
-  border-top: 1ps solid #959595;
+  border-top: 1px solid #959595;
 }
 .my-topheader .my-not-nav > li .dropdown-menu .foot li {
   text-align: center;
@@ -6923,7 +6923,7 @@ a:link {
   color: #959595;
 }
 .my-topheader .my-not-nav .my-messages .mess-body {
-  padding: 10px;
+  padding: 15px;
 }
 .my-topheader .my-not-nav .my-messages .mess-body span {
   color: #606060;
@@ -6933,7 +6933,7 @@ a:link {
 }
 .my-topheader .my-not-nav .my-messages .mess-body .description {
   display: table;
-  font-size: 14px;
+  font-size: 12px;
 }
 .my-topheader .my-not-nav .my-messages .mess-body .date {
   font-size: 10px;
@@ -6943,17 +6943,18 @@ a:link {
 }
 .my-topheader .my-not-nav .my-messages img {
   float: left;
-  padding: 8px;
+  padding: 12px;
 }
 .my-topheader .my-not-nav .my-alerts .content .icon {
   float: left;
   color: #bababa;
-  padding: 22px 20px;
+  padding: 15px;
   font-size: 35px;
 }
 .my-topheader .my-not-nav .my-alerts .content .alert-body {
-  padding: 10px 10px 10px 0;
+  padding: 15px 15px 15px 0;
   display: table;
+  line-height: 14px;
 }
 .my-topheader .my-not-nav .my-alerts .content .alert-body span {
   color: #606060;
@@ -6963,12 +6964,11 @@ a:link {
   color: #58a49f;
 }
 .my-topheader .my-not-nav .my-alerts .content .alert-body .description {
-  font-size: 14px;
+  font-size: 12px;
 }
 .my-topheader .my-not-nav .my-alerts .content .alert-body .date {
   display: table;
   font-size: 10px;
-  margin-top: 5px;
 }
 @media (max-width: 767px) {
   .my-topheader .my-not-nav {
