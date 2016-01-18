@@ -6891,7 +6891,7 @@ a:link {
   width: 0;
   height: 0;
   border-color: transparent;
-  border-bottom-color: #959595;
+  border-bottom-color: #ffffff;
   border-style: solid;
   border-width: 10px;
 }
@@ -6901,7 +6901,8 @@ a:link {
   left: 50%;
   right: auto;
   transform: translate(-50%, 0);
-  border: 1px solid #959595;
+  border: none;
+  margin-top: 10px;
 }
 .pe-topheader .pe-not-nav > li .dropdown-menu .content li {
   border-bottom: 1px solid #e7e7e7;
@@ -6912,7 +6913,6 @@ a:link {
 .pe-topheader .pe-not-nav > li .dropdown-menu .foot {
   padding: 10px;
   background: #e7e7e7;
-  border-top: 1px solid #959595;
 }
 .pe-topheader .pe-not-nav > li .dropdown-menu .foot li {
   text-align: center;
