@@ -6976,23 +6976,6 @@ a:link {
     float: right;
   }
 }
-.pe-topheader .pe-settings .dropdown-menu {
-  width: initial!important;
-}
-.pe-topheader .pe-settings .dropdown-menu > a i {
-  font-size: 25px;
-}
-.pe-topheader .pe-settings .dropdown-menu .content a {
-  color: #606060;
-  font-size: 12px;
-}
-.pe-topheader .pe-settings .dropdown-menu .content a .sett-body {
-  padding: 10px;
-  font-size: 14px;
-}
-.pe-topheader .pe-settings .dropdown-menu .content a .sett-body .name {
-  margin-left: 10px;
-}
 .pe-topheader .pe-profile-menu {
   margin-right: 10px;
 }
