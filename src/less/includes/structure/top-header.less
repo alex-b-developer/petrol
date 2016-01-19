@@ -159,7 +159,7 @@
 
 		  .dropdown-menu {
 			  padding: 0;
-			  width: 270px;
+			  width: 300px;
 			  left: 50%;
 			  right: auto;
 			  transform: translate(-50%, 0);
@@ -170,8 +170,11 @@
 					li{
 						border-bottom: 1px solid @pe-topheader-item-seeall-bg;
 
-						&:hover{
-							background: @pe-topheader-item-active-bg;						}
+						a{
+							&:hover{
+							background: #f9f9f9;						
+							}
+						}						
 					}
 				}
 
@@ -205,22 +208,25 @@
 
 				.mess-body{
 					margin-left: 55px;
+					line-height: 14px;
 
 					span{
 						color: @pe-text-gray-dark;
 					}
 					.name {
-						font-weight: bold;
+						display: block;
+					    font-weight: bold;
+					    margin-bottom: 10px;
 					}
 					.description{
-						display: table;
-						font-size: 12px;
+						font-size: 13px;
 					}
 					.date {
+						display: table;
 						font-size: 10px;
-						position: relative;
-						top: 2px;
 						float: right;
+						color: @pe-text-gray-light;
+						font-style: italic;
 					}
 				}
 
@@ -235,7 +241,7 @@
 			ul.dropdown-menu{
 
 				a{
-					padding: 15px;
+					padding: 18px;
 					display: block;
 				}
 
@@ -244,27 +250,31 @@
 
 					.icon{
 						color: @pe-text-gray-light;
-						font-size: 35px;
+						font-size: 27px;
 					}
 				}
 				.alert-body{
-					display: table;
 					line-height: 14px;
-					margin-left: 45px;
+					margin-left: 43px;
 
 					span{
 						color: @pe-text-gray-dark;
 					}
 					.name{
+						display: block;
 						font-weight: bold;
+						margin-bottom: 5px;
 						color: @pe-primary-color;
 					}
 					.description{						
-						font-size: 12px;
+						font-size: 13px;
 					}
 					.date{
 						display: table;
 						font-size: 10px;
+						float: right;
+						color: @pe-text-gray-light;
+						font-style: italic;
 					}
 				}
 			}
