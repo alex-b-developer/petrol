@@ -6884,7 +6884,16 @@ a:link {
   padding-left: 13px;
   padding-right: 13px;
 }
-.pe-topheader .pe-icon-nav > li .arrow:after {
+.pe-topheader .pe-icon-nav > li .dropdown-menu {
+  padding: 0;
+  width: 300px;
+  left: 50%;
+  right: auto;
+  transform: translate(-50%, 0);
+  border: none;
+  margin-top: 10px;
+}
+.pe-topheader .pe-icon-nav > li .dropdown-menu:after {
   content: " ";
   top: -20px;
   left: 50%;
@@ -6898,15 +6907,6 @@ a:link {
   border-bottom-color: #ffffff;
   border-style: solid;
   border-width: 10px;
-}
-.pe-topheader .pe-icon-nav > li .dropdown-menu {
-  padding: 0;
-  width: 300px;
-  left: 50%;
-  right: auto;
-  transform: translate(-50%, 0);
-  border: none;
-  margin-top: 10px;
 }
 .pe-topheader .pe-icon-nav > li .dropdown-menu .content li {
   border-bottom: 1px solid #e7e7e7;
