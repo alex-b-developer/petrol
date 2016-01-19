@@ -123,8 +123,8 @@
 		}
 	}
 
-	//Notification menus
-	.pe-not-nav{
+	//Icon Menu
+	.pe-icon-nav{
 		margin-right: 15px;
 
 		@media @phone{
@@ -175,14 +175,15 @@
 					}
 				}
 
-				.foot {
-					padding: 10px;
+				.foot {					
 					background: @pe-topheader-item-seeall-bg;
 
 					li{
 						text-align:center;
 						
 						a{
+							display: block;
+							padding: 10px;
 							font-size: 12px;
 		  				    font-weight: bold;
 		  				    color: @pe-dropdown-border-color;
@@ -195,46 +196,61 @@
 		//Messages dropdown
 		.pe-messages{
 
-			.mess-body{
-				padding: 15px;
+			ul.dropdown-menu{
 
-				span{
-					color: @pe-text-gray-dark;
+				a{
+					padding: 15px;
+					display: block;
 				}
-				.name {
-					font-weight: bold;
-				}
-				.description{
-					display: table;
-					font-size: 12px;
-				}
-				.date {
-					font-size: 10px;
-					position: relative;
-					top: 2px;
-					float: right;
-				}
-			}
 
-			img{
-				float: left;
-				padding: 12px;
+				.mess-body{
+					margin-left: 55px;
+
+					span{
+						color: @pe-text-gray-dark;
+					}
+					.name {
+						font-weight: bold;
+					}
+					.description{
+						display: table;
+						font-size: 12px;
+					}
+					.date {
+						font-size: 10px;
+						position: relative;
+						top: 2px;
+						float: right;
+					}
+				}
+
+				.mess-img{
+					float: left;	
+				}							
 			}
 		}
 
 		//Alerts dropdown
 		.pe-alerts{
-			.content{
-				.icon{
-					float:left;
-					color: @pe-text-gray-light;
+			ul.dropdown-menu{
+
+				a{
 					padding: 15px;
-					font-size: 35px;
+					display: block;
+				}
+
+				.alert-icon{
+					float:left;
+
+					.icon{
+						color: @pe-text-gray-light;
+						font-size: 35px;
+					}
 				}
 				.alert-body{
-					padding: 15px 15px 15px 0;
 					display: table;
 					line-height: 14px;
+					margin-left: 45px;
 
 					span{
 						color: @pe-text-gray-dark;

@@ -6868,19 +6868,19 @@ a:link {
     float: left;
   }
 }
-.pe-topheader .pe-not-nav {
+.pe-topheader .pe-icon-nav {
   margin-right: 15px;
 }
 @media (max-width: 767px) {
-  .pe-topheader .pe-not-nav {
+  .pe-topheader .pe-icon-nav {
     margin: 0px;
   }
 }
-.pe-topheader .pe-not-nav > li > a {
+.pe-topheader .pe-icon-nav > li > a {
   padding-left: 13px;
   padding-right: 13px;
 }
-.pe-topheader .pe-not-nav > li .arrow:after {
+.pe-topheader .pe-icon-nav > li .arrow:after {
   content: " ";
   top: -20px;
   left: 50%;
@@ -6895,7 +6895,7 @@ a:link {
   border-style: solid;
   border-width: 10px;
 }
-.pe-topheader .pe-not-nav > li .dropdown-menu {
+.pe-topheader .pe-icon-nav > li .dropdown-menu {
   padding: 0;
   width: 270px;
   left: 50%;
@@ -6904,74 +6904,83 @@ a:link {
   border: none;
   margin-top: 10px;
 }
-.pe-topheader .pe-not-nav > li .dropdown-menu .content li {
+.pe-topheader .pe-icon-nav > li .dropdown-menu .content li {
   border-bottom: 1px solid #e7e7e7;
 }
-.pe-topheader .pe-not-nav > li .dropdown-menu .content li:hover {
+.pe-topheader .pe-icon-nav > li .dropdown-menu .content li:hover {
   background: #e7e7e7;
 }
-.pe-topheader .pe-not-nav > li .dropdown-menu .foot {
-  padding: 10px;
+.pe-topheader .pe-icon-nav > li .dropdown-menu .foot {
   background: #e7e7e7;
 }
-.pe-topheader .pe-not-nav > li .dropdown-menu .foot li {
+.pe-topheader .pe-icon-nav > li .dropdown-menu .foot li {
   text-align: center;
 }
-.pe-topheader .pe-not-nav > li .dropdown-menu .foot li a {
+.pe-topheader .pe-icon-nav > li .dropdown-menu .foot li a {
+  display: block;
+  padding: 10px;
   font-size: 12px;
   font-weight: bold;
   color: #959595;
 }
-.pe-topheader .pe-not-nav .pe-messages .mess-body {
+.pe-topheader .pe-icon-nav .pe-messages ul.dropdown-menu a {
   padding: 15px;
+  display: block;
 }
-.pe-topheader .pe-not-nav .pe-messages .mess-body span {
+.pe-topheader .pe-icon-nav .pe-messages ul.dropdown-menu .mess-body {
+  margin-left: 55px;
+}
+.pe-topheader .pe-icon-nav .pe-messages ul.dropdown-menu .mess-body span {
   color: #606060;
 }
-.pe-topheader .pe-not-nav .pe-messages .mess-body .name {
+.pe-topheader .pe-icon-nav .pe-messages ul.dropdown-menu .mess-body .name {
   font-weight: bold;
 }
-.pe-topheader .pe-not-nav .pe-messages .mess-body .description {
+.pe-topheader .pe-icon-nav .pe-messages ul.dropdown-menu .mess-body .description {
   display: table;
   font-size: 12px;
 }
-.pe-topheader .pe-not-nav .pe-messages .mess-body .date {
+.pe-topheader .pe-icon-nav .pe-messages ul.dropdown-menu .mess-body .date {
   font-size: 10px;
   position: relative;
   top: 2px;
   float: right;
 }
-.pe-topheader .pe-not-nav .pe-messages img {
+.pe-topheader .pe-icon-nav .pe-messages ul.dropdown-menu .mess-img {
   float: left;
-  padding: 12px;
 }
-.pe-topheader .pe-not-nav .pe-alerts .content .icon {
-  float: left;
-  color: #bababa;
+.pe-topheader .pe-icon-nav .pe-alerts ul.dropdown-menu a {
   padding: 15px;
+  display: block;
+}
+.pe-topheader .pe-icon-nav .pe-alerts ul.dropdown-menu .alert-icon {
+  float: left;
+}
+.pe-topheader .pe-icon-nav .pe-alerts ul.dropdown-menu .alert-icon .icon {
+  color: #bababa;
   font-size: 35px;
 }
-.pe-topheader .pe-not-nav .pe-alerts .content .alert-body {
-  padding: 15px 15px 15px 0;
+.pe-topheader .pe-icon-nav .pe-alerts ul.dropdown-menu .alert-body {
   display: table;
   line-height: 14px;
+  margin-left: 45px;
 }
-.pe-topheader .pe-not-nav .pe-alerts .content .alert-body span {
+.pe-topheader .pe-icon-nav .pe-alerts ul.dropdown-menu .alert-body span {
   color: #606060;
 }
-.pe-topheader .pe-not-nav .pe-alerts .content .alert-body .name {
+.pe-topheader .pe-icon-nav .pe-alerts ul.dropdown-menu .alert-body .name {
   font-weight: bold;
   color: #30bfbd;
 }
-.pe-topheader .pe-not-nav .pe-alerts .content .alert-body .description {
+.pe-topheader .pe-icon-nav .pe-alerts ul.dropdown-menu .alert-body .description {
   font-size: 12px;
 }
-.pe-topheader .pe-not-nav .pe-alerts .content .alert-body .date {
+.pe-topheader .pe-icon-nav .pe-alerts ul.dropdown-menu .alert-body .date {
   display: table;
   font-size: 10px;
 }
 @media (max-width: 767px) {
-  .pe-topheader .pe-not-nav {
+  .pe-topheader .pe-icon-nav {
     display: flex;
     float: right;
   }
