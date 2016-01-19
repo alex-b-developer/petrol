@@ -48,6 +48,10 @@
 					color: @pe-topheader-color;
 				}
 
+				&:focus{
+					color: @pe-topheader-color;
+				}
+
 				@media @phone{
 					line-height: @pe-topheader-phone-height;	
 					padding: 0;		
@@ -71,7 +75,6 @@
 			}
 
 			> .dropdown-menu {
-				margin-top: 0px;
 				-webkit-border-radius: 0px;
 				-moz-border-radius: 0px;
 				border-radius: 0px;
@@ -145,7 +148,6 @@
 			  left: 50%;
 			  right: auto;
 			  transform: translate(-50%, 0);
-			  border: none;
 			  margin-top: 10px;
 
 			&:after{
@@ -287,6 +289,26 @@
 	//Profile Menu
 	.pe-profile-menu{
 		margin-right: 10px;
+
+		.dropdown-menu{
+			margin-top: 10px;
+
+			&:after{
+		  		content: " ";
+			    top: -20px;
+			    right: 20px;
+			    margin-left: -10px;
+			    border-top-width: 0;			    
+			    position: absolute;
+			    display: block;
+			    width: 0;
+			    height: 0;
+			    border-color: transparent;
+			    border-bottom-color: @pe-white-color;
+			    border-style: solid;
+			    border-width: 10px;
+		  	}
+		}
 
 		> a{
 
