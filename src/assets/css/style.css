@@ -6850,12 +6850,15 @@ a:link {
   }
 }
 .pe-topheader .navbar-nav > li > .dropdown-menu > li > a {
-  padding: 10px 20px;
+  padding: 7px 16px;
   color: #828282;
 }
 .pe-topheader .navbar-nav > li > .dropdown-menu > li > a:hover {
   background: #30bfbd;
   color: #f9f9f9;
+}
+.pe-topheader .navbar-nav > li > .dropdown-menu .divider {
+  margin: 6px 0;
 }
 .pe-topheader .navbar-nav > .open > a {
   background-color: initial;
