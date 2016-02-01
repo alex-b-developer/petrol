@@ -7032,6 +7032,9 @@ a:link {
   border-style: solid;
   border-width: 10px;
 }
+.pe-topheader .pe-profile-menu .dropdown-menu i {
+  padding-right: 5px;
+}
 .pe-topheader .pe-profile-menu > a img {
   margin-right: 10px;
   position: relative;
