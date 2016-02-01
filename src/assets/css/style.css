@@ -6932,6 +6932,7 @@ a:link {
 .pe-topheader .pe-icon-nav .pe-messages ul.dropdown-menu a {
   padding: 15px;
   display: block;
+  overflow: hidden;
 }
 .pe-topheader .pe-icon-nav .pe-messages ul.dropdown-menu .mess-body {
   margin-left: 55px;
@@ -6961,6 +6962,7 @@ a:link {
 .pe-topheader .pe-icon-nav .pe-alerts ul.dropdown-menu a {
   padding: 18px;
   display: block;
+  overflow: hidden;
 }
 .pe-topheader .pe-icon-nav .pe-alerts ul.dropdown-menu .alert-icon {
   float: left;
