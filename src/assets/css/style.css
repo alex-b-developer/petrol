@@ -7058,7 +7058,9 @@ a:link {
   border-width: 10px;
 }
 .pe-topheader .pe-profile-menu .dropdown-menu i {
-  padding-right: 5px;
+  margin-right: 8px;
+  position: relative;
+  top: 1px;
 }
 .pe-topheader .pe-profile-menu > a img {
   margin-right: 10px;
