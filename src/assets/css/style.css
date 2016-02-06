@@ -6803,6 +6803,9 @@ a:link {
 }
 .pe-topheader .navbar-header .navbar-toggle {
   padding: 16px;
+  background: #222c3d;
+}
+.pe-topheader .navbar-header .navbar-toggle:hover {
   background: #283347;
 }
 .pe-topheader .navbar-header .navbar-toggle span {
@@ -6847,6 +6850,7 @@ a:link {
 @media (max-width: 767px) {
   .pe-topheader .navbar-nav > li > .dropdown-menu {
     position: absolute;
+    background-color: #ffffff;
   }
 }
 .pe-topheader .navbar-nav > li > .dropdown-menu > li > a {
