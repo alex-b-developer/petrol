@@ -71,7 +71,7 @@
 
 				//Notifications badge globe style
 				.badge {
-				position: absolute;
+				  position: absolute;
 			  	top: 20px;
 			  	right: 0px;			  	
 			  	background-color: @pe-topheader-badge-bg;
@@ -86,20 +86,25 @@
 				border-radius: 0px;
 
 				@media @phone{
-				    left: 0!important;
-				    margin-top: 1px!important;
-				    padding: 0!important;
-				    right: auto!important;
-				    transform: none!important;
-				    width: 100%!important;
-					background-color: @pe-white-alt;
-					position: absolute;
+			    left: 0!important;
+			    margin-top: 1px!important;
+			    padding: 0!important;
+			    right: auto!important;
+			    transform: none!important;
+			    width: 100%!important;
+				  background-color: @pe-white-alt;
+				  position: absolute;
 				}
-				>li{
 
-					>a{
+				> li{
+
+					> a{
 						padding: 7px 16px;
 						color:@pe-text-gray;
+
+						@media @phone{
+							padding: 10px 16px;
+						}
 
 						&:hover{
 							background:@pe-primary-color;
@@ -107,6 +112,7 @@
 						}
 					}
 				}
+
 				.divider{
 					margin: 6px 0;
 				}
@@ -130,9 +136,11 @@
 				}
 			}
 		}
+
+
 	}
 
-	//Avatar menu
+	//Avatar menu ARREGLAR ESTO!!
 	.pe-avatar-nav {
 
 		@media @phone{
@@ -336,26 +344,26 @@
 			margin-top: 10px;
 
 			&:after{
-		  		content: " ";
-			    top: -20px;
-			    right: 20px;
-			    margin-left: -10px;
-			    border-top-width: 0;			    
-			    position: absolute;
-			    display: block;
-			    width: 0;
-			    height: 0;
-			    border-color: transparent;
-			    border-bottom-color: @pe-white-color;
-			    border-style: solid;
-			    border-width: 10px;
-		  	}
+	  		content: " ";
+		    top: -20px;
+		    right: 20px;
+		    margin-left: -10px;
+		    border-top-width: 0;			    
+		    position: absolute;
+		    display: block;
+		    width: 0;
+		    height: 0;
+		    border-color: transparent;
+		    border-bottom-color: @pe-white-color;
+		    border-style: solid;
+		    border-width: 10px;
+	  	}
 
-		  	i{
-		  		margin-right: 8px;
-			    position: relative;
-			    top: 1px;
-		  	}
+	  	i{
+	  		margin-right: 8px;
+		    position: relative;
+		    top: 1px;
+	  	}
 		}
 
 		> a{
