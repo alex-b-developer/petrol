@@ -6793,23 +6793,22 @@ a:link {
 }
 @media (max-width: 767px) {
   .pe-topheader .navbar-header .navbar-brand {
-    height: 56px;
+    height: 65px;
+    background-size: 120px;
   }
 }
 @media (max-width: 767px) {
   .pe-topheader .navbar-header {
     background-color: #222c3d;
+    height: 65px;
   }
 }
 .pe-topheader .navbar-header .navbar-toggle {
-  padding: 16px;
+  padding: 19px;
   background: #222c3d;
 }
-.pe-topheader .navbar-header .navbar-toggle:hover {
-  background: #283347;
-}
 .pe-topheader .navbar-header .navbar-toggle span {
-  font-size: 20px;
+  font-size: 23px;
 }
 @media (max-width: 767px) {
   .pe-topheader .navbar-nav > li {
@@ -7066,6 +7065,12 @@ a:link {
   position: relative;
   max-width: 45px;
   max-height: 45px;
+}
+@media (max-width: 767px) {
+  .pe-topheader .pe-profile-menu > a img {
+    width: 40px;
+    margin-top: -3px;
+  }
 }
 .pe-topheader .pe-profile-menu > a .caret {
   margin-left: 10px;
