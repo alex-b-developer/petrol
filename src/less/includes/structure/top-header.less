@@ -67,6 +67,10 @@
 				.icon{
 					vertical-align: middle;
 					font-size: 20px;
+
+					@media @phone{
+						font-size: 18px;
+					}
 				}
 
 				//Notifications badge globe style
@@ -86,14 +90,15 @@
 				border-radius: 0px;
 
 				@media @phone{
-			    left: 0!important;
-			    margin-top: 1px!important;
-			    padding: 0!important;
-			    right: auto!important;
-			    transform: none!important;
-			    width: 100%!important;
+			    left: 0;
+			    margin-top: 1px;
+			    padding: 0;
+			    right: auto;
+			    transform: none;
+			    width: 100%;
 				  background-color: @pe-white-alt;
 				  position: absolute;
+				  padding: 3px 0;
 				}
 
 				> li{
@@ -103,7 +108,7 @@
 						color:@pe-text-gray;
 
 						@media @phone{
-							padding: 10px 16px;
+							padding: 11px 16px;
 						}
 
 						&:hover{
@@ -114,7 +119,7 @@
 				}
 
 				.divider{
-					margin: 6px 0;
+					margin: 4px 0;
 				}
 			}
 		}
@@ -136,8 +141,6 @@
 				}
 			}
 		}
-
-
 	}
 
 	//Avatar menu ARREGLAR ESTO!!
@@ -150,7 +153,7 @@
 		}
 	}
 
-	//Icon Menu
+	//Icons Menu
 	.pe-icon-nav{
 		margin-right: 15px;
 
@@ -164,6 +167,11 @@
 			> a{
 				padding-left: 13px;
 				padding-right: 13px;
+
+				@media @phone{
+					padding-left: 10px;
+					padding-right: 10px;
+				}
 			}
 
 		  .dropdown-menu {
@@ -174,7 +182,7 @@
 			  transform: translate(-50%, 0);
 			  margin-top: 10px;
 
-			&:after{
+				&:after{
 		  		content: " ";
 			    top: -20px;
 			    left: 50%;
@@ -193,6 +201,17 @@
 			    	display: none;
 			    }
 		  	}
+
+		  	@media @phone{
+			    left: 0;
+			    margin-top: 1px;
+			    padding: 0;
+			    right: auto;
+			    transform: none;
+			    width: 100%;
+				  background-color: @pe-white-alt;
+				  position: absolute;
+				}
 
 			  .content {
 					li{
@@ -332,7 +351,7 @@
 
 		@media @phone{
 			display: flex;
-  		    float: right;
+  		float: right;
 		}
 	}
 	
@@ -357,6 +376,10 @@
 		    border-bottom-color: @pe-white-color;
 		    border-style: solid;
 		    border-width: 10px;
+
+		    @media @phone{
+		    	display: none;
+		    }
 	  	}
 
 	  	i{
