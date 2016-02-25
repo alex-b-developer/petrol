@@ -6851,6 +6851,11 @@ a:link {
   padding: 3px 3px;
   font-weight: normal;
 }
+@media (max-width: 767px) {
+  .pe-topheader .navbar-nav > li > a .badge {
+    top: 10px;
+  }
+}
 .pe-topheader .navbar-nav > li > .dropdown-menu {
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
@@ -6974,7 +6979,7 @@ a:link {
 @media (max-width: 767px) {
   .pe-topheader .pe-icon-nav > li .dropdown-menu .foot {
     background: #dfdfdf;
-    border: 1px solid #d3d3d3;
+    border-bottom: 1px solid #dddddd;
   }
 }
 .pe-topheader .pe-icon-nav > li .dropdown-menu .foot li {
@@ -6982,7 +6987,7 @@ a:link {
 }
 .pe-topheader .pe-icon-nav > li .dropdown-menu .foot li a {
   display: block;
-  padding: 10px;
+  padding: 12px;
   font-size: 12px;
   font-weight: bold;
   color: #959595;
@@ -7150,7 +7155,7 @@ a:link {
   .pe-main-sidebar-container {
     width: auto;
     position: relative;
-    top: -56px;
+    top: -57px;
   }
 }
 /* MENU ELEMENTS */

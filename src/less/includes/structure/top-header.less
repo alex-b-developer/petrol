@@ -80,6 +80,10 @@
 			  	background-color: @pe-topheader-badge-bg;
 			  	padding: 3px 3px;
 			  	font-weight: normal;
+
+			  	@media @phone {
+			  		top: 10px;
+			  	}
 				}
 			}
 
@@ -229,7 +233,7 @@
 
 					@media @phone{
 						background: darken(@pe-topheader-item-seeall-bg, 3%);
-						border: 1px solid darken(@pe-topheader-item-seeall-bg, 8%);
+						border-bottom: 1px solid @pe-gray;
 					}
 
 					li{
@@ -237,10 +241,10 @@
 						
 						a{
 							display: block;
-							padding: 10px;
+							padding: 12px;
 							font-size: 12px;
-		  				    font-weight: bold;
-		  				    color: @pe-dropdown-border-color;
+		  				font-weight: bold;
+		  				color: @pe-dropdown-border-color;
 						}
 					}
 				}
