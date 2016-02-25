@@ -4,13 +4,47 @@
   border: none;
   background: @pe-topheader-bg;
 	
+	.container-fluid{
+		padding-right: 0;
+	}
+
+	.navbar-right{
+		margin: 0;
+	}
+
+	.pe-topheader-collapse{
+		position: relative;
+	}
+
+	//Search Component
+	.pe-search-component{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		padding-left: @pe-leftsidebar-width;
+		z-index: @pe-topheader-search-zindex;
+
+		.content{
+			background-color: #14151C;
+			height: 100%;
+		}
+	}
+
 	//Logo & toggle button
 	.navbar-header{
 
 		.navbar-brand{
-			width: @pe-sidebar-width;
+			width: @pe-leftsidebar-width;
 			background: @pe-topheader-logo-bg url("@{img-path}/petrol-logo.png") 20px center no-repeat;
 			height:80px;
+
+			//Position relative when search is open
+			.pe-search-open & {
+				position: relative;
+				z-index: @pe-topheader-search-zindex + 1;
+			}
 
 			@media @phone{
 				height:65px;
@@ -148,6 +182,12 @@
 
 	//Avatar menu ARREGLAR ESTO!!
 	.pe-avatar-nav {
+		
+		//Position relative when search is open
+		.pe-search-open & {
+			position: relative;
+			z-index: @pe-topheader-search-zindex + 1;
+		}
 
 		@media @phone{
 			margin: 0px;
@@ -159,6 +199,12 @@
 	//Icons Menu
 	.pe-icon-nav{
 		margin-right: 15px;
+
+		//Position relative when search is open
+		.pe-search-open & {
+			position: relative;
+			z-index: @pe-topheader-search-zindex + 1;
+		}
 
 		@media @phone{
 			margin: 0px;
