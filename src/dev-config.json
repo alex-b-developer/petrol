@@ -27,6 +27,9 @@
 		},
 		"simple-line-icons":{
 			"css":["simple-line-icons/css/simple-line-icons.css"]
+		},
+		"search":{
+			"css":["search/main.js"]
 		}
 	}
 }

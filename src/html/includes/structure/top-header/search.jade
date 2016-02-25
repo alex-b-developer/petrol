@@ -1,3 +1,50 @@
 li.pe-browse
   a.dropdown-toggle(href='javascript:;', data-toggle='dropdown', aria-expanded='true')
     i.icon.icon-magnifier
+
+
+header.cd-main-header.animate-search
+      .cd-logo
+        a(href='#0')
+          img(src='img/cd-logo.svg', alt='Logo')
+      nav.cd-main-nav-wrapper
+        a.cd-search-trigger.cd-text-replace(href='#search') Search
+        ul.cd-main-nav
+          li
+            a(href='#0') Products
+          // additional navigation items
+      a.cd-nav-trigger.cd-text-replace(href='#0')
+        | Menu
+        span
+    main.cd-main-content
+      // your content here
+    #search.cd-main-search
+      form
+        input(type='search', placeholder='Search...')
+        .cd-select
+          span in
+          select(name='select-category')
+            option(value='all-categories') all Categories
+            // additional options here
+          span.selected-value all Categories
+      .cd-search-suggestions
+        .news
+          h3 News
+          ul
+            li
+              a.image-wrapper(href='#0')
+                img(src='img/placeholder.png', alt='News image')
+              h4
+                a.cd-nowrap(href='#0') Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              time(datetime='2016-01-12') Feb 03, 2016
+            // additional news here
+        // .news
+        .quick-links
+          h3 Quick Links
+          ul
+            li
+              a(href='#0') Find a store
+            // additional quick links here
+      // .cd-search-suggestions
+      a.close.cd-text-replace(href='#0') Close Form
+    // .cd-main-search
