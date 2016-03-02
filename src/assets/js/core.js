@@ -9,9 +9,10 @@ var App = (function () {
     libsPath: 'lib'
   };
 
-  // Core private functions
+  var body = $('body');
+  var topHeader = $(".pe-topheader");
 
-  function my_close_open_items(sub_menu){
+  function pe_close_open_items(sub_menu){
 
     // Part 1: We close all the open sub menus
     var opened_submenus = $(".pe-sidebar-elements-class > li.open").find(".sub-menu").not(sub_menu);
@@ -28,7 +29,7 @@ var App = (function () {
     });
   }
 
-  function my_open_menu_item(sub_menu){
+  function pe_open_menu_item(sub_menu){
 
     // Part 2: We open the current clicked sub-menu 
     var main_item = sub_menu.parent();//Get the li element
@@ -44,8 +45,7 @@ var App = (function () {
 
   }
 
-
-  function my_sidebar_func(){
+  function pe_sidebar_func(){
 
     $(".pe-sidebar-elements-class > li > a").click(function( e ){//When we make click on main level item
 
@@ -55,10 +55,10 @@ var App = (function () {
       // Verify if the current item has a submenu
       if( sub_menu.length > 0 ){
         if( main_item.hasClass("open") ){ // Don't open submenu if current main item is already closed
-          my_close_open_items();        
+          pe_close_open_items();        
         }else{
-          my_close_open_items( sub_menu );
-          my_open_menu_item( sub_menu );
+          pe_close_open_items( sub_menu );
+          pe_open_menu_item( sub_menu );
         }
         e.preventDefault();//We stop the default href link action
       }
@@ -66,7 +66,19 @@ var App = (function () {
     });
   }
 
-  var my_private_var = "Hell yeah";
+  function pe_search_component(){
+    var searchCpm = $(".pe-search-component");
+    var toggle = $(".pe-search-toggle");
+    var close = $(".close", searchCpm);
+
+    toggle.on('click', function(){
+      body.addClass('pe-search-open');
+    });
+
+    close.on('click',function(){
+      body.removeClass('pe-search-open');
+    });
+  }
 
   //Public statements
   return {
@@ -76,8 +88,11 @@ var App = (function () {
 
       $.extend( config, options );
 
-      my_sidebar_func( config );
+      /*Left sidebar init*/
+      pe_sidebar_func();
 
+      /*Search Component*/
+      pe_search_component();
     }
   };
  
