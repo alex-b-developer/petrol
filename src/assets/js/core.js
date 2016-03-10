@@ -78,6 +78,16 @@ var App = (function () {
     close.on('click',function(){
       body.removeClass('pe-search-open');
     });
+
+    searchCpm.hover(function(){ 
+        mouse_is_inside=true; 
+    }, function(){ 
+        mouse_is_inside=false; 
+    });
+
+    body.mouseup('click',function(){
+      if(! mouse_is_inside) {body.removeClass('pe-search-open');};      
+    });
   }
 
   //Public statements
