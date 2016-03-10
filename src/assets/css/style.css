@@ -7166,6 +7166,7 @@ a:link {
   width: 92%;
   padding: 20px;
   font-weight: 300;
+  color: #bababa;
 }
 .pe-search-component .content input[type="search"]:focus {
   outline: none;

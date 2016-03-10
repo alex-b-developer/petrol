@@ -79,7 +79,7 @@ var App = (function () {
       body.removeClass('pe-search-open');
     });
 
-    searchCpm.hover(function(){ 
+    searchCpm.hover(function(){
         mouse_is_inside=true; 
     }, function(){ 
         mouse_is_inside=false; 
