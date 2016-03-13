@@ -1,73 +1,91 @@
-.pe-topheader {
+.pe-topheader{
   min-height: 50px;
   margin-bottom: 0px;
   border: none;
   background: @pe-topheader-bg;
 	
+	.container-fluid{
+		padding-right: 0;
+	}
+
+	.navbar-right{
+		margin: 0;
+	}
+
+	.pe-topheader-collapse{
+		position: relative;
+	}
+
 	//Logo & toggle button
-	.navbar-header {
+	.navbar-header{
 
 		.navbar-brand{
-			width: @pe-sidebar-width;
+			width: @pe-leftsidebar-width;
 			background: @pe-topheader-logo-bg url("@{img-path}/petrol-logo.png") 20px center no-repeat;
 			height:80px;
 
-			@media @phone {
+			//Position relative when search is open
+			.pe-search-open & {
+				position: relative;
+				z-index: @pe-topheader-search-zindex + 1;
+			}
+
+			@media @phone{
 				height:65px;
 				background-size: 120px;
 			}
 		}
 		
-		@media @phone {
+		@media @phone{
 			background-color: @pe-topheader-logo-bg;	
 			height: 65px;		
 		}
 
-		.navbar-toggle {
+		.navbar-toggle{
 			padding: 19px;
 			background: @pe-navbar-toggle-bg;
 
-			span {
+			span{
 				font-size: 23px;
 			}
 		}
 	}
 	
 	//Menus
-	.navbar-nav {
+	.navbar-nav{
 			
-		> li {//First level
+		> li{//First level
 
-			@media @phone {
+			@media @phone{
 				position: static;
 			}
 
-			> a {
+			> a{
 				padding-top: 0;
 				padding-bottom: 0;
 				line-height: @pe-topheader-height;
 				font-size: 16px;
 				color: @pe-topheader-color;
 
-				&:hover {
+				&:hover{
 					color: @pe-topheader-color;
 				}
 
-				&:focus {
+				&:focus{
 					color: @pe-topheader-color;
 				}
 
-				@media @phone {
+				@media @phone{
 					line-height: @pe-topheader-phone-height;	
 					padding: 0;		
 				}
 
 				//Icon style inside menu
-				.icon {
+				.icon{
 					vertical-align: middle;
 					font-size: 20px;
 
-					@media @phone {
+					@media @phone{
 						font-size: 18px;
 					}
 				}
@@ -92,7 +110,7 @@
 				-moz-border-radius: 0px;
 				border-radius: 0px;
 
-				@media @phone {
+				@media @phone{
 			    left: 0;
 			    margin-top: 1px;
 			    padding: 0;
@@ -104,41 +122,41 @@
 				  padding: 3px 0;
 				}
 
-				> li {
+				> li{
 
-					> a {
+					> a{
 						padding: 7px 16px;
 						color:@pe-text-gray;
 
-						@media @phone {
+						@media @phone{
 							padding: 11px 16px;
 						}
 
-						&:hover {
+						&:hover{
 							background:@pe-primary-color;
 							color:@pe-white-alt;
 						}
 					}
 				}
 
-				.divider {
+				.divider{
 					margin: 4px 0;
 				}
 			}
 		}
 
-		> .open {
+		> .open{
 
 			> a {
 				background-color: initial;
 				color: @pe-dropdown-border-color;
 
-				&:hover {
+				&:hover{
 					background-color: initial;
 					color: @pe-dropdown-border-color;
 				}
 
-				&:focus {
+				&:focus{
 					background-color: initial;
 					color: @pe-dropdown-border-color;
 				}
@@ -148,8 +166,14 @@
 
 	//Avatar menu ARREGLAR ESTO!!
 	.pe-avatar-nav {
+		
+		//Position relative when search is open
+		/*.pe-search-open & {
+			position: relative;
+			z-index: @pe-topheader-search-zindex + 1;
+		}*/
 
-		@media @phone {
+		@media @phone{
 			margin: 0px;
 			display: table-cell;
   		float: left;
@@ -157,10 +181,16 @@
 	}
 
 	//Icons Menu
-	.pe-icon-nav {
+	.pe-icon-nav{
 		margin-right: 15px;
 
-		@media @phone {
+		//Position relative when search is open
+		/*.pe-search-open & {
+			position: relative;
+			z-index: @pe-topheader-search-zindex + 1;
+		}*/
+
+		@media @phone{
 			margin: 0px;
 		}
 
@@ -171,7 +201,7 @@
 				padding-left: 13px;
 				padding-right: 13px;
 
-				@media @phone {
+				@media @phone{
 					padding-left: 10px;
 					padding-right: 10px;
 				}
@@ -185,7 +215,7 @@
 			  transform: translate(-50%, 0);
 			  margin-top: 10px;
 
-				&:after {
+				&:after{
 		  		content: " ";
 			    top: -20px;
 			    left: 50%;
@@ -200,12 +230,12 @@
 			    border-style: solid;
 			    border-width: 10px;
 
-			    @media @phone {
+			    @media @phone{
 			    	display: none;
 			    }
 		  	}
 
-		  	@media @phone {
+		  	@media @phone{
 			    left: 0;
 			    margin-top: 1px;
 			    padding: 0;
@@ -221,7 +251,7 @@
 						border-bottom: 1px solid @pe-topheader-item-seeall-bg;
 
 						a{
-							&:hover {
+							&:hover{
 							background: @pe-white-alt;						
 							}
 						}						
@@ -231,7 +261,7 @@
 				.foot {					
 					background: @pe-topheader-item-seeall-bg;
 
-					@media @phone {
+					@media @phone{
 						background: darken(@pe-topheader-item-seeall-bg, 3%);
 						border-bottom: 1px solid @pe-gray;
 					}
@@ -252,9 +282,9 @@
 		}
 		
 		//Messages dropdown
-		.pe-messages {
+		.pe-messages{
 
-			ul.dropdown-menu {
+			ul.dropdown-menu{
 
 				a{
 					padding: 15px;
@@ -262,11 +292,11 @@
 					overflow: hidden;
 				}
 
-				.msj-body {
+				.msj-body{
 					margin-left: 55px;
 					line-height: 14px;
 
-					span {
+					span{
 						color: @pe-text-gray-dark;
 					}
 
@@ -276,7 +306,7 @@
 					    margin-bottom: 5px;
 					}
 
-					.description {
+					.description{
 						display: block;
 						font-size: 13px;
 						line-height: 17px;
@@ -291,7 +321,7 @@
 					}
 				}
 
-				.msj-img {
+				.msj-img{
 					float: left;
 					border-radius: 50%;
     		  overflow: hidden;	
@@ -300,48 +330,48 @@
 		}
 
 		//Alerts dropdown
-		.pe-alerts {
+		.pe-alerts{
 
-			ul.dropdown-menu {
+			ul.dropdown-menu{
 
-				a {
+				a{
 					padding: 18px;
 					display: block;
 					overflow: hidden;
 				}
 
-				.alert-icon {
+				.alert-icon{
 					float: left;
     			overflow: hidden;	
 
-					.icon {
+					.icon{
 						color: @pe-text-gray-light;
 						font-size: 27px;
 					}
 				}
 
-				.alert-body {
+				.alert-body{
 					line-height: 14px;
 					margin-left: 43px;
 
-					span {
+					span{
 						color: @pe-text-gray-dark;
 					}
 
-					.name {
+					.name{
 						display: block;
 						font-weight: bold;
 						margin-bottom: 5px;
 						color: @pe-primary-color;
 					}
 
-					.description {						
+					.description{						
 						font-size: 13px;
 						display: block;
 						line-height: 17px;
 					}
 
-					.date {
+					.date{
 						display: block;
 						font-size: 10px;
 						float: right;
@@ -352,20 +382,20 @@
 			}
 		}
 
-		@media @phone {
+		@media @phone{
 			display: flex;
   		float: right;
 		}
 	}
 	
 	//Profile Menu
-	.pe-profile-menu {
+	.pe-profile-menu{
 		margin-right: 10px;
 
-		.dropdown-menu {
+		.dropdown-menu{
 			margin-top: 10px;
 
-			&:after {
+			&:after{
 	  		content: " ";
 		    top: -20px;
 		    right: 20px;
@@ -380,19 +410,19 @@
 		    border-style: solid;
 		    border-width: 10px;
 
-		    @media @phone {
+		    @media @phone{
 		    	display: none;
 		    }
 	  	}
 
-	  	i {
+	  	i{
 	  		margin-right: 8px;
 		    position: relative;
 		    top: 1px;
 	  	}
 		}
 
-		> a {
+		> a{
 
 			img {
 			  margin-right: 10px;
@@ -400,13 +430,13 @@
  				max-width: 45px; 				
  				max-height: 45px; 		
 
- 				@media @phone {
+ 				@media @phone{
 				    width: 40px;
 				    margin-top: -3px;
  				}		
 			}
 
-			.caret {
+			.caret{
 				margin-left: 10px;
 			}
 		}
